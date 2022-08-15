@@ -1,1 +1,30 @@
-@import './common';
+@import './base/common';
+@import './base/base';
+@import './base/reset-styles';
+@import './base/container';
+
+@import './utils/variables';
+@import './utils/variables';
+
+@import './components/button';
+@import './components/logo';
+@import './components/socials';
+
+@import './layouts/section';
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/catalog-links';
+@import './layouts/special-offer';
+@import './layouts/recommedation';
+@import './layouts/buying-with';
+@import './layouts/last-visited';
+@import './layouts/about';
+@import './layouts/benefits';
+@import './layouts/how-it-works';
+@import './layouts/question-form';
+@import './layouts/customer-review';
+@import './layouts/gallery-instagram';
+@import './layouts/contacts';
+@import './layouts/footer';
+
+
