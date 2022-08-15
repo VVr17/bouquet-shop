@@ -1,20 +1,21 @@
-<header>
+<header class="header">
   <div class="container">
     <p>Місто</p>
-    <nav>
-      <ul>
-        <li><a href="#">Про нас</a></li>
-        <li><a href="#">Каталог товарів</a></li>
-        <li><a href="#">Доставка і оплата</a></li>
-        <li><a href="#">Відгуки</a></li>
-        <li><a href="#">Контакти</a></li>
+    <nav class="navigation">
+      <ul class="list navigation__list">
+        <li><a class="link" href="#">Про нас</a></li>
+        <li><a class="link" href="#">Каталог товарів</a></li>
+        <li><a class="link" href="#">Доставка і оплата</a></li>
+        <li><a class="link" href="#">Відгуки</a></li>
+        <li><a class="link" href="#">Контакти</a></li>
       </ul>
     </nav>
 
     <ul class="list socials">
       <li class="socials__item">
         <a class="link socials__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener"
-          aria-label="Ссылка на Instagram">
+          aria-label="Посилання на Instagram">
+          Instagram
           <svg class="socials__icon" width="20px" height="20px">
             <!-- <use href="./images/icons/icons.svg#icon-instagram"></use> -->
           </svg>
@@ -22,7 +23,8 @@
       </li>
       <li class="socials__item">
         <a class="link socials__link" href="https://twitter.com/" target="_blank" rel="noreferrer noopener"
-          aria-label="Ссылка на Twitter">
+          aria-label="Посилання на Twitter">
+          Twitter
           <svg class="socials__icon" width="20px" height="20px">
             <!-- <use href="./images/icons/icons.svg#icon-twitter"></use> -->
           </svg>
@@ -30,7 +32,8 @@
       </li>
       <li class="socials__item">
         <a class="link socials__link" href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener"
-          aria-label="Ссылка на Facebook">
+          aria-label="Посилання на Facebook">
+          Facebook
           <svg class="socials__icon" width="20px" height="20px">
             <!-- <use href="./images/icons/icons.svg#icon-facebook"></use> -->
           </svg>
@@ -38,19 +41,25 @@
       </li>
       <li class="socials__item">
         <a class="link socials__link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener"
-          aria-label="Ссылка на LinkedIn">
+          aria-label="Посилання на LinkedIn">
+          LinkedIn
           <svg class="socials__icon" width="20px" height="20px">
             <!-- <use href="./images/icons/icons.svg#icon-linkedin"></use> -->
           </svg>
         </a>
       </li>
     </ul>
+  </div>
+  <div class="container header__wrapper">
+    <a class="logo header__logo" href="./index.html">
+      <svg class="logo__icon" width="199" height="50">
+        <use href="./images/sprite.svg#icon-logo"></use>
+      </svg>
+    </a>
 
-
-    <a class="logo header__logo" href="./index.html">Logo</a>
-    <ul>
-      <li><a href="">Телефон</a></li>
-      <li><a href="">Е-мейл</a></li>
+    <ul class="list header__contacts">
+      <li><a class="link" href="">Телефон</a></li>
+      <li><a class="link" href="">Е-мейл</a></li>
     </ul>
 
     <label>Знайти букет

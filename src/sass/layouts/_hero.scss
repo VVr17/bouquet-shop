@@ -1,0 +1,9 @@
+.hero {
+  @media screen and (min-width:768px) {
+    padding-bottom: 30px;
+  }
+
+  @media screen and (min-width:1440px) {
+    padding-bottom: 50px;
+  }
+}

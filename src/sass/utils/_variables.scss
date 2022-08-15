@@ -1,0 +1,72 @@
+:root {
+  // FONTS
+  --main-font: 'Montserrat', sans-serif;
+  --secondary-font: 'PT Sans', sans-serif;
+  --third-font: Titan One, cursive;
+
+// font-family: 'Raleway', sans-serif ?
+
+  // COLORS
+  --accent-color: #03453B;
+  --secondary-color: #00554E;
+  --btn-hover-color:#70A5A0;
+  --btn-click-color:#03453B;
+  --btn-disabled-color:#DEDEDE;
+  --white-color: #ffffff;
+
+  // BROWN
+  --secondary-accent-color:#B9956F;
+  --light-brown:#D2A97E;
+  --dark-brown:#987045;
+  --brown-disabled:#F3DCC3;
+
+  // text colors
+  --main-black-text-color: #333333;
+  --secondary-text-color: #EBEBEB;
+
+  // background color
+  --main-background-color:#:root {
+    // FONTS
+    --main-font: 'Montserrat', sans-serif;
+    --secondary-font: 'PT Sans', sans-serif;
+    --third-font: Titan One, cursive;
+  
+  // font-family: 'Raleway', sans-serif ?
+  
+    // COLORS
+    --accent-color: #03453B;
+    --secondary-color: #00554E;
+    --btn-hover-color:#70A5A0;
+    --btn-click-color:#03453B;
+    --btn-disabled-color:#DEDEDE;
+    --white-color: #ffffff;
+  
+    // BROWN
+    --secondary-accent-color:#B9956F;
+    --light-brown:#D2A97E;
+    --dark-brown:#987045;
+    --brown-disabled:#F3DCC3;
+  
+    // text colors
+    --main-black-text-color: #333333;
+    --secondary-text-color: #EBEBEB;
+  
+    // background color
+    --main-background-color: #EBEBEB;
+  
+    --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+  
+    // border
+    // --border-color: #e18298;
+    // --contacts-card-border-color: #e1e1e1;
+    // --contacts-card-box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+  }
+  ;
+
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+
+  // border
+  // --border-color: #e18298;
+  // --contacts-card-border-color: #e1e1e1;
+  // --contacts-card-box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+}

@@ -1,0 +1,15 @@
+.header {
+  @media screen and (max-width:767.98px) {
+    display: none;
+  }
+}
+
+.header__wrapper {
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+  display: flex;
+}
+
+.header__contacts {
+  display: flex;
+}
