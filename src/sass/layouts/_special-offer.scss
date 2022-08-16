@@ -1,0 +1,30 @@
+.special-offer {
+  padding-top: 50px;
+
+  @media screen and (min-width:768px) {
+    padding-top: 80px;
+  }
+
+  @media screen and (min-width:1440px) {
+    padding-top: 100px;
+  }
+
+}
+
+.special-offer-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.accent-sign {
+  color:  var(--accent-red-color);
+}
+
+.special-offer__title {
+  margin-bottom: 10px;
+}
+
+.special-offer__subtitle {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 30px;
+}

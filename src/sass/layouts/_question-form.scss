@@ -1,0 +1,110 @@
+.question-form__title {
+  margin-bottom: 10px;
+}
+
+.question-form__description {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+// проверить
+
+/* ONLINE FORM */
+// .form__wrapper {
+// 	margin-bottom: 44px;
+
+// 	@media screen and (min-width: 768px) {
+// 		display: flex;
+// 	}
+// }
+
+.form {
+  background-color: var(--secondary-accent-color);
+}
+
+.form__group {
+	position: relative;
+	display: block;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--white-color);
+
+	&:focus-within {
+		color: var(--white-color);
+	}
+
+	@media screen and (max-width: 767px) {
+		&:not(:last-child) {
+			margin-bottom: 44px;
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		width: 330px;
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+	}
+
+	@media screen and (min-width: 1280px) {
+		&:first-child {
+			width: 270px;
+		}
+
+		&:last-child {
+			width: 260px;
+		}
+	}
+}
+
+.form__input {
+	width: 100%;
+	padding-bottom: 8px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid var(--white-color);
+	cursor: pointer;
+	outline: transparent;
+	color: var(--white-color);
+
+	&:focus {
+		border-color: var(--white-color);
+	}
+}
+
+.form__label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateY(0);
+	transition: transform 250ms ease-in;
+
+	.form__input:focus + &,
+	.form__input:not(:placeholder-shown) + & {
+		transform: translateY(-100%);
+	}
+}
+
+.form__group--message {
+	display: block;
+	width: 100%;
+
+	@media screen and (min-width: 768px) {
+		margin-bottom: 44px;
+	}
+}
+
+.form__input--message {
+	width: 100%;
+	resize: none;
+}
+
+.form__button {
+	@media screen and (max-width: 767px) {
+		display: block;
+		margin: 0 auto;
+	}
+}

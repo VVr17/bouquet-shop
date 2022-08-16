@@ -4,12 +4,13 @@
 @import './base/container';
 
 @import './utils/variables';
-@import './utils/variables';
+@import './utils/visually-hiddem';
 
 @import './components/button';
 @import './components/logo';
 @import './components/socials';
 @import './components/navigation';
+@import './components/product-card';
 
 @import './layouts/mobile-menu';
 @import './layouts/section';

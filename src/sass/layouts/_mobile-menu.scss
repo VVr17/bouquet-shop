@@ -3,3 +3,63 @@
     display: none;
   }
 }
+
+.menu__upperside {
+  // padding-left: 0;
+  // padding-right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__contacts {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 12px;
+}
+
+.menu__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__link--phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.menu__wrapper {
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__label {
+  flex-grow: 1;
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+}
+
+.menu__icon--search {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.menu__input {
+  width:100%;
+  max-width: 300px;
+  // background-color: transparent;
+}

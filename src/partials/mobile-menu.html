@@ -1,17 +1,61 @@
 <div class="mobile-menu">
-  <div class="container">
-    <p>Місто</p>
-    <a class="link" href="">Телефон</a>
-  
-    <a class="link logo header__logo" href="./index.html">Logo</a>
-    <p>Корзина</p>
-  
-    <label>Знайти букет
-      <input type="text">
-    </label>
+  <div class="container menu__upperside">
+    <ul class="list menu__contacts">
+      <li class="menu__item">
+        <a class="link menu__link" href="#">
+          <svg class="menu__icon" width="32px" height="32px" style="fill:white; stroke:teal">
+            <use href="./images/sprite.svg#icon-map-pin"></use>
+          </svg>
+          Київ
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="link menu__link menu__link--phone" href="tel:++380664890575">
+          <svg class="menu__icon" width="32" height="32">
+            <use href="./images/sprite.svg#icon-phone"></use>
+          </svg>
+          +38 066 489 05 75
+        </a>
+      </li>
+      <!-- <li class="menu__item">
+        <a class="link menu__link menu__link--phone" href="tel:++380664890575">
+          <svg class="menu__icon" width="32" height="32">
+            <use href="./images/sprite.svg#icon-instagram"></use>
+          </svg>
+          da_buket
+        </a>
+      </li> -->
+    </ul>
+
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu" data-menu-button>
+      <svg class="menu-btn__icon" width="18px" height="18px" aria-label="переключатель мобильного меню">
+        <use class="menu-btn__icon--menu" href="./images/sprite.svg#icon-burger"></use>
+        <use class="menu-btn__icon--cross" href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
   </div>
 
-<!-- <nav class="navigation">
+    <div class="container menu__wrapper">
+      <a class="logo" href="./index.html">
+        <svg class="logo__icon" width="32" height="32">
+          <use href="./images/sprite.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <label class="menu__label">
+        <!-- Знайти букет -->
+        <input class="menu__input" type="text" placeholder="знайти букет">
+        <svg class="menu__icon menu__icon--search" width="32" height="32">
+          <use href="./images/sprite.svg#icon-search"></use>
+        </svg>
+      </label>
+      <a class="basket" href="#">
+        <svg class="basket__icon" width="32" height="32">
+          <use href="./images/sprite.svg#icon-shopping-bag"></use>
+        </svg>
+      </a>
+    </div>
+
+  <!-- <nav class="navigation">
   <ul class="list navigation__list">
     <li><a class="link" href="#">Про нас</a></li>
     <li><a class="link" href="#">Каталог товарів</a></li>
@@ -19,6 +63,4 @@
     <li><a class="link" href="#">Відгуки</a></li>
     <li><a class="link" href="#">Контакти</a></li>
   </ul>
-</nav> -->  
-
-</div>
+</nav> -->

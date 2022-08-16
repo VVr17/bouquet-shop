@@ -1,0 +1,27 @@
+
+.how-it-works {
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 360px;
+  margin: 0 auto;
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+  text-align: center;
+
+}
+
+.how-it-works__item {
+  padding: 15px;
+  min-height: 176px;
+  border: 2px solid #AB8D60 ;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.how-it-works__title {
+  margin-bottom: 36px;
+  font-weight: 600;
+font-size: 20px;
+}
