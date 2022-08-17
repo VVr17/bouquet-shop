@@ -1,69 +1,102 @@
-<footer class="section footer">
+<footer class="footer">
   <div class="container footer__container">
-    <a class="link" href="./index.html">лого</a>
 
-  <ul class="list">
-    <li><a class="link" href="#">Букети з цукерок</a></li>
-    <li><a class="link" href="#">Букети з фруктів</a></li>
-    <li><a class="link" href="#">Букети з горіхів</a></li>
-    <li><a class="link" href="#">Чоловічі букети</a></li>
-    <li><a class="link" href="#">Дитячі букети</a></li>
-  </ul>
-
-  <ul class="list">
-    <li><a class="link" href="#">Про нас</a></li>
-    <li><a class="link" href="#">Каталог товарів</a></li>
-    <li><a class="link" href="#">Доставка і оплата</a></li>
-    <li><a class="link" href="#">Відгуки</a></li>
-    <li><a class="link" href="#">Контакти</a></li>
-    </li>
-  </ul>
-
-  <ul class="list">
-    <li><a class="link" href="#">Телефон</a></li>
-    <li><a class="link" href="#">Пошта</a></li>
-    <li><a class="link" href="#">Емейл</a></li>
-  </ul>
-
-  <ul class="list">
-    <li>Пн-Пт с 8.00-22.00</li>
-    <li>Сб-Вс с 10.00 -22.00</li>
-  </ul>
-
-  <ul class="list socials">
-    <li class="socials__item">
-      <a class="link socials__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener"
-        aria-label="Посилання на Instagram">
-        <svg class="socials__icon" width="20px" height="20px">
-          <!-- <use href="./images/icons/icons.svg#icon-instagram"></use> -->
+    <div class="footer-contacts">
+      <a class="link logo footer__logo" href="./index.html">
+        <svg class="logo__icon" width="46" height="46">
+          <use href="./images/sprite.svg#icon-logo"></use>
         </svg>
       </a>
-    </li>
-    <li class="socials__item">
-      <a class="link socials__link" href="https://twitter.com/" target="_blank" rel="noreferrer noopener"
-        aria-label="Посилання на Twitter">
-        <svg class="socials__icon" width="20px" height="20px">
-          <!-- <use href="./images/icons/icons.svg#icon-twitter"></use> -->
+      <ul class="list footer-contact__list">
+        <li class="">
+          <a class="link footer-contact__link" href="tel:++380664890575">
+            <svg class="footer-contact__icon footer-contact__icon--phone" width="24" height="24">
+              <use href="./images/sprite.svg#icon-smartphone"></use>
+            </svg>
+            +38 066 489 05 75
+          </a>
+        </li>
+        <li class="">
+          <a class="link footer-contact__link" href="https://www.instagram.com/" target="_blank"
+            rel="noreferrer noopener" aria-label="Посилання на Instagram">
+            <svg class="footer-contact__icon footer-contact__icon--instagram" width="24px" height="24px">
+              <use href="./images/sprite.svg#icon-instagram"></use>
+            </svg>
+            Da_buket
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <ul class="list footer__working-hours">
+      <li>Пн-Пт с 9.00-18.00</li>
+      <li>Сб-Нд вихідні</li>
+    </ul>
+
+    <div class="footer__links">
+      <ul class="list">
+        <li><a class="link footer__link" href="#">Букети з цукерок</a></li>
+        <li><a class="link footer__link" href="#">Букети з фруктів</a></li>
+        <li><a class="link footer__link" href="#">Букети з горіхів</a></li>
+        <li><a class="link footer__link" href="#">Чоловічі букети</a></li>
+        <li><a class="link footer__link" href="#">Дитячі букети</a></li>
+      </ul>
+
+      <ul class="list">
+        <li class=""><a class="link footer__link" href="#benefits">Чому обирають нас?</a></li>
+        <li class=""><a class="link footer__link" href="#about">Про нас</a></li>
+        <li class=""><a class="link footer__link" href="#how-it-work">Як це працює?</a></li>
+        <li class=""><a class="link footer__link" href="#customer-review">Відгуки</a></li>
+        <li class=""><a class="link footer__link" href="#contacts">Контакти</a></li>
+      </ul>
+    </div>
+
+
+    <ul class="list socials">
+      <li class="socials__item">
+        <a class="link socials__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener"
+          aria-label="Посилання на Instagram">
+          <svg class="socials__icon" width="20px" height="20px">
+            <use href="./images/sprite.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="link socials__link" href="https://twitter.com/" target="_blank" rel="noreferrer noopener"
+          aria-label="Посилання на Telegram">
+          <svg class="socials__icon" width="20px" height="20px">
+            <use href="./images/sprite.svg#icon-telegram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="link socials__link" href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener"
+          aria-label="Посилання на Watsapp">
+          <svg class="socials__icon" width="20px" height="20px">
+            <use href="./images/sprite.svg#icon-whatsapp"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <!-- <div class="distribution">
+    <p class="footer__title">Подпишитесь на рассылку</p>
+    <form class="distribution__form">
+      <label class="distribution__label">
+        <input class="distribution__input" name="email" type="email" placeholder="E-mail">
+      </label>
+      <button class="button button__main button__main--with-icon" type="submit">Подписаться
+        <svg class="button__icon" width="24px" height="24px">
+          <use href="./images/icons/icons.svg#icon-plane"></use>
         </svg>
-      </a>
-    </li>
-    <li class="socials__item">
-      <a class="link socials__link" href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener"
-        aria-label="Посилання на Facebook">
-        <svg class="socials__icon" width="20px" height="20px">
-          <!-- <use href="./images/icons/icons.svg#icon-facebook"></use> -->
-        </svg>
-      </a>
-    </li>
-    <li class="socials__item">
-      <a class="link socials__link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener"
-        aria-label="Посилання на LinkedIn">
-        <svg class="socials__icon" width="20px" height="20px">
-          <!-- <use href="./images/icons/icons.svg#icon-linkedin"></use> -->
-        </svg>
-      </a>
-    </li>
-  </ul>
+      </button>
+    </form>
+  </div> -->
+
+    <ul class="list footer__policy">
+      <li><a class="link" href="">Політика конфіденційності</a></li>
+      <li><a class="link" href="">Угода користувача</a></li>
+      <li>&#169; 2022 - Da_buket. All Rights Reserved.</li>
+    </ul>
   </div>
-
 </footer>

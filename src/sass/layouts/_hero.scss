@@ -18,12 +18,12 @@
 	background-position: center;
 	text-align: center;
 
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url(../images/hero/hero-image-1-sm.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-image-1-sm.jpg);
   max-width: 360px;
   height: 500px;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)),url(../images/hero/hero-image-1-sm@2x.jpg);
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/hero/hero-image-1-sm@2x.jpg);
 	}
 
   // ? сделать новый герой картинки
@@ -116,6 +116,5 @@
   margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.63;
-  color: #d5d5d5;
   letter-spacing: 0.02em;
 }

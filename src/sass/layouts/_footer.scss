@@ -1,14 +1,68 @@
 .footer {
-  background-color: var(--accent-color);
-  color: var(--main-background-color);
+  padding-top: 30px;
+  padding-bottom: 18px;
   font-size: 14px;
   line-height: 1.21;
-  text-transform: capitalize;
+  text-align: center;
+  background-color: var(--accent-color);
+  color: var(--main-background-color);
 }
 
-.footer__container {
+
+.footer-contacts {
   display: flex;
-  flex-wrap: wrap;
+  justify-content:space-around;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.footer-contact__link {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.footer-contact__icon {
+  margin-right: 6px;
+}
+
+.footer-contact__icon--phone {
+  fill: currentColor;
+}
+
+.footer-contact__icon--instagram {
+  stroke: currentColor;
+}
+
+.footer__working-hours {
+  margin-bottom: 18px;
+}
+
+.footer__links {
+  margin-bottom: 20px;
+  display: flex;
   justify-content: space-between;
   align-items: baseline;
+  text-align: left;
+}
+
+.footer__link {
+  display: block;
+  padding: 5px 0;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials {
+  margin-bottom: 20px;
+}
+
+.footer__policy {
+  font-size: 10px;
+  text-align: left;
+  letter-spacing: 0.2em;
 }
