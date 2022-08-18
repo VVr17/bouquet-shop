@@ -2,7 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--accent-color);
+  color: var(--accent-text-color);
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
 }
 
 .to-catalog__icon {

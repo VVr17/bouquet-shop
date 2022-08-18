@@ -29,6 +29,11 @@
   align-items: center;
   padding-top: 15px;
   padding-bottom: 15px;
+
+	&:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .mobile-header__icon {
@@ -37,8 +42,8 @@
 }
 
 .mobile-header__icon--instagram {
+	--color3:currentColor;
   margin-right: 8px;
-	stroke: currentColor;
 }
 
 
@@ -47,6 +52,7 @@
   justify-content: center;
   align-items: center;
   font-weight: 700;
+	
 }
 
 .mobile-header__icon--phone {
@@ -54,11 +60,12 @@
 }
 
 .mobile-header__icon--basket {
+	--color3:currentColor;
   margin-right: 0;
 }
 
 .mobile-header__wrapper {
-  background-color: var(--accent-color);
+  background-color: var(--accent-background-color);
   color: var(--secondary-text-color);
   display: flex;
   justify-content: space-between;
@@ -130,6 +137,7 @@
 }
 
 .mobile-menu__link {
+	color: var(--accent-text-color);
 	&:hover,
 	&:focus {
 		color: var(--accent-color);
@@ -148,7 +156,7 @@
 
 	font-size: 0;
 	display: inline-block;
-	color: var(--third-color);
+	color: var(--accent-text-color);
 
 	background-color: transparent;
 	cursor: pointer;
@@ -162,7 +170,7 @@
 	}
 
 	&--is-open {
-		color: var(--accent-color);
+		color: var(--accent-text-color);
 	}
 
 	@media screen and (min-width: 768px) {

@@ -4,7 +4,7 @@
   font-size: 14px;
   line-height: 1.21;
   text-align: center;
-  background-color: var(--accent-color);
+  background-color: var(--accent-background-color);
   color: var(--main-background-color);
 }
 
@@ -22,6 +22,11 @@
   align-items: center;
   padding-top: 5px;
   padding-bottom: 5px;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-contact__icon {
@@ -33,7 +38,7 @@
 }
 
 .footer-contact__icon--instagram {
-  stroke: currentColor;
+  --color3: currentColor;
 }
 
 .footer__working-hours {

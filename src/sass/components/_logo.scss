@@ -1,6 +1,11 @@
 .logo {
   font-size: 0;
   color: var(--secondary-accent-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .logo__icon {

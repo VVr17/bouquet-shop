@@ -3,31 +3,52 @@
   --main-font: 'Montserrat', sans-serif;
   --secondary-font: 'PT Sans', sans-serif;
   --third-font: 'Titan One', cursive;
-  --fouth-font:'Raleway', sans-serif;
+  --fouth-font: 'Raleway', sans-serif;
 
   // COLORS
-  --accent-color: #03453B;
-  --secondary-color: #00554E;
-  --third-color: #0c5d57;
-  // --btn-hover-color:#70A5A0;
-  --btn-disabled-color:#DEDEDE;
+  --accent-color: #f4900e;
+  // --secondary-color: #4b7447;
+  --secondary-color: #325044;
   --white-color: #ffffff;
-  --accent-red-color:#E12317;
-
-  // // BROWN
-  --secondary-accent-color:#B9956F;
-  // --light-brown:#D2A97E;
-  // --dark-brown:#987045;
-  // --brown-disabled:#F3DCC3;
 
   // text colors
   --main-black-text-color: #333333;
-  --secondary-text-color: #EBEBEB;
+  --secondary-text-color: #ebebeb;
+  --accent-text-color:#013220;
 
   // background color
-    // --main-background-color: #EBEBEB;
-    --main-background-color: #F5F4FA;
-    --backdrop-color: rgba(32, 26, 19, 0.6);
-  
-    --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+  --main-background-color: #f5f4fa;
+  --accent-background-color: #013220;
+  --backdrop-color: rgba(32, 26, 19, 0.6);
+
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+// --accent-color: #03453B;
+// --secondary-color: #00554E;
+// --third-color: #0c5d57;
+// // --btn-hover-color:#70A5A0;
+// --btn-disabled-color:#DEDEDE;
+// --white-color: #ffffff;
+// --accent-red-color:#E12317;
+
+// --accent-color: #013220;
+// --accent-color: #28382b;
+// --accent-color: #455b46;
+// --accent-color: #2a312a;
+// --main-black-text-color: #f4900e;
+// --secondary-text-color:  #f4900e;
+
+// --secondary-color: #00554E;
+// --third-color: #0c5d57;
+// // --btn-hover-color:#70A5A0;
+// --btn-disabled-color:#DEDEDE;
+// --white-color: #ffffff;
+// --accent-red-color:#E12317;
+
+// // // BROWN
+// --secondary-accent-color:#f4900e;
+// --light-brown:#D2A97E;
+// --dark-brown:#987045;
+// --brown-disabled:#F3DCC3;
