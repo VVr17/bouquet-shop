@@ -8,10 +8,9 @@
   color: var(--main-background-color);
 }
 
-
 .footer-contacts {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
   margin-bottom: 18px;
 }
@@ -22,6 +21,8 @@
   align-items: center;
   padding-top: 5px;
   padding-bottom: 5px;
+
+  transition: color 250ms var(--transition-timing);
 
   &:hover,
   &:focus {
@@ -56,14 +57,13 @@
 .footer__link {
   display: block;
   padding: 5px 0;
-}
 
-.socials__item:not(:last-child) {
-  margin-right: 10px;
-}
+  transition: color 250ms var(--transition-timing);
 
-.socials {
-  margin-bottom: 20px;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer__policy {

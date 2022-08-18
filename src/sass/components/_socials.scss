@@ -1,39 +1,25 @@
 .socials {
   display: flex;
-  // justify-content: end;
-  // align-items: flex-end;
-  // margin-bottom: 40px;
 }
 
-// .socials__item:not(:last-child) {
-//   margin-right: 28.24px;
 
-//   @include mq('tablet') {
-//     margin-right: 30px;
-//   }
-// }
+.socials__item:not(:last-child) {
+  margin-right: 10px;
+}
 
-// .socials__link {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
+.socials {
+  margin-bottom: 20px;
+}
 
-//   width: 32px;
-//   height: 32px;
+.socials__link {
+  transition: color 250ms var(--transition-timing);
 
-//   color: var(--icons-color);
-//   cursor: pointer;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
 
-//   border-radius: 50%;
-
-//   transition: color 250ms var(--transition-timing);
-
-//   &:hover,
-//   &:focus {
-//     color: var(--accent-color);
-//   }
-// }
-
-// .socials__icon {
-//   fill: currentColor;
-// }
+.socials__icon {
+  --color3: currentColor;
+}

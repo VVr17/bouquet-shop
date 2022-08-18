@@ -23,12 +23,16 @@
 
 	transition: background-color 250ms var(--transition-timing),
   border-color 250ms var(--transition-timing),
+	color 250ms var(--transition-timing),
   box-shadow 250ms var(--transition-timing);
 
 	&:hover,
 	&:focus {
-		background-color: var(--accent-color);
-    border-color: var(--accent-color);
+		background-color: var(--accent-background-color);
+    border-color: var(--accent-background-color);
+		color: var(--accent-color);
+		// color: var(--accent-button-color);
+
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	}
 }

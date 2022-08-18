@@ -1,4 +1,4 @@
-.benefits{
+.benefits {
   padding: 10px;
   max-width: 360px;
   margin: 0 auto;
@@ -8,8 +8,19 @@
 }
 
 .benefits__container {
-  border: 2px solid #AB8D60;
-  padding: 40px 10px;
+  padding: 5px;
+  background-image: linear-gradient(
+    to right,
+    #ab8d60 0%,
+    #c4a673 17.45%,
+    #f2d495 51.11%,
+    #ab8d60 100%
+  );
+}
+
+.benefits__border {
+  background-color: var(--accent-background-color);
+  padding: 35px 10px;
 }
 
 .benefits__item {

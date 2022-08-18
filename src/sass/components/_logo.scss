@@ -2,6 +2,8 @@
   font-size: 0;
   color: var(--secondary-accent-color);
 
+  transition: border-color 250ms var(--transition-timing);
+
   &:hover,
   &:focus {
     color: var(--accent-color);
