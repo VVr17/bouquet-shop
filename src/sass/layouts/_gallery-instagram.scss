@@ -1,8 +1,22 @@
-.gallery__title {
-  margin-bottom: 10px;
-}
+// .gallery__title {
+//   margin-bottom: 10px;
+// }
 
 .gallery__link {
   display: block;
-  margin-bottom: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  transition: border-color 250ms var(--transition-timing);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+
+.swiper-pagination--gallery {
+  --swiper-theme-color: #987045;
+  text-align: center;
 }
