@@ -1,13 +1,16 @@
+.customer-review__item:not(:last-child) {
+  margin-bottom: 20px;
+}
 
 .customer-review {
+  padding: 10px 10px 16px 10px;
   text-align: center;
-  padding-bottom: 16px;
 
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 2.55;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.21;
   background-color: var(--white-color);
-  border-radius: 16px;
+  border-radius: 4px;
 
   // @include mq('tablet') {
   //   font-size: 14px;
@@ -20,17 +23,18 @@
   // }
 }
 
-// .customer-review__picture {
-//   margin: 0 auto;
-//   margin-bottom: 32px;
-//   transform: scale(1) translateY(0);
-//   transition: transform 250ms var(--transition-timing);
+.customer-review__picture {
+  margin: 0 auto;
+  margin-bottom: 32px;
+  transform: scale(1) translateY(0);
+  transition: transform 250ms var(--transition-timing);
+  
 
-//   &:hover,
-//   &:focus {
-//     transform: scale(1.1) translateY(10px);
-//   }
-// }
+  &:hover,
+  &:focus {
+    transform: scale(1.1) translateY(10px);
+  }
+}
 
 .customer-review__wrapper {
   display: flex;
@@ -39,14 +43,7 @@
   padding-left: 50px;
   padding-right: 50px;
   background-color: var(--customer-review-card-background-color);
-
-  transform: scale(1);
-  transition: transform 250ms var(--transition-timing);
-
-  &:hover,
-  &:focus {
-    transform: scale(1.1);
-  }
+  border-radius: 4px;
 
   // @include mq('tablet') {
   //   max-width: 620px;
@@ -78,6 +75,7 @@
   );
   padding-left: 15px;
   padding-right: 8px;
+  border-radius: 4px;
 
   // @include mq('tablet') {
   //   padding-right: 50px;
@@ -111,9 +109,9 @@
 
 .customer-review__name {
   position: relative;
-
   font-size: 14px;
   line-height: 1.86;
+  font-weight: 500;
 
   // @include mq('tablet') {
   //   font-size: 16px;

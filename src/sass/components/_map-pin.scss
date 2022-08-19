@@ -1,0 +1,19 @@
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+	transition: color 250ms var(--transition-timing);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.map__icon {
+  --color1: currentColor;
+  margin-right: 6px;
+}

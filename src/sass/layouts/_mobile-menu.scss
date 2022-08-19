@@ -59,10 +59,6 @@
   fill: currentColor;
 }
 
-.mobile-header__icon--basket {
-  --color3: currentColor;
-  margin-right: 0;
-}
 
 .mobile-header__wrapper {
   background-color: var(--accent-background-color);
@@ -120,12 +116,12 @@
   width: 100%;
   padding: 130px 41px;
 
-  @media screen and (min-width: 425px) {
-    width: 70%;
+  @media screen and (min-width: 420px) {
+    width: 80%;
   }
 
   @media screen and (min-width: 480px) {
-    width: 60%;
+    width: 70%;
   }
 }
 
