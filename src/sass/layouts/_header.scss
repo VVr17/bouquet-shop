@@ -4,20 +4,22 @@
   }
 }
 
-.header-upperside {
+.header-upperside__container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header__map {
-  margin-right: 40px;
+  @media screen and (max-width:1439.98px) {
+    margin-right: 40px;
+  }
 }
 
 .header__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -57,6 +59,9 @@
 .header-downside {
   background-color: var(--accent-background-color);
   color: var(--secondary-text-color);
+}
+
+.header-downside__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,3 +102,16 @@
   margin-right: 8px;
 }
 
+.header__working-hours {
+  @media screen and (max-width:1439.98px) {
+    display: none;
+  }
+  display: flex;
+}
+
+.header-working-hours__item {
+  
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
+}

@@ -3,12 +3,10 @@
 }
 
 
-.socials__item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.socials {
-  margin-bottom: 20px;
+.socials__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .socials__link {

@@ -1,5 +1,5 @@
   // core version + navigation, pagination modules:
-  import Swiper, { Navigation, Pagination, Autoplay, EffectCoverflow, EffectFade } from 'swiper';
+  import Swiper, { Pagination, Autoplay, EffectCoverflow } from 'swiper';
 
   // import Swiper and modules styles
   // import 'swiper/swiper.min.css';
@@ -8,39 +8,75 @@
   
   import 'swiper/swiper-bundle.min.css';
 
-const gallerySlider = document.querySelector('.js-gallery-swiper');
+const gallerySliderMobile = document.querySelector('.js-gallery-swiper-mobile');
+const gallerySliderTablet = document.querySelector('.js-gallery-swiper-tablet');
+const gallerySliderDesktop = document.querySelector('.js-gallery-swiper-desktop');
 
-const swiper = new Swiper(gallerySlider, {
-  modules: [Navigation, Pagination, Autoplay, EffectFade, EffectCoverflow ],
+
+const swiperMoblie = new Swiper(gallerySliderMobile, {
+  modules: [ Pagination, Autoplay, EffectCoverflow ],
 
   loop: true,
+  effect: "coverflow",
+  grabCursor: true,
+  lazy: true,
 
   autoplay: {
-    delay: 2500,
+    delay: 3000,
     disableOnInteraction: false,
   },
 
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination--gallery',
+    el: '.swiper-pagination--gallery-mobile',
+    clickable: true,
   },
+});
 
 
+const swiperTablet = new Swiper(gallerySliderTablet, {
+  modules: [ Pagination, Autoplay, EffectCoverflow ],
+
+  loop: true,
   effect: "coverflow",
   grabCursor: true,
+  lazy: true,
 
-    // effect: "cube",
-    // grabCursor: true,
-    // cubeEffect: {
-    //   shadow: true,
-    //   slideShadows: true,
-    //   shadowOffset: 20,
-    //   shadowScale: 0.94,
-    // },
+  slidesPerView: 3,
+  spaceBetween: 20,
 
-      // Navigation arrows
-    // navigation: {
-    //   nextEl: '.swiper-button-next',
-    //   prevEl: '.swiper-button-prev',
-    // },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination--gallery-tablet',
+    clickable: true,
+  },
+});
+
+
+const swiperDesktop = new Swiper(gallerySliderDesktop, {
+  modules: [ Pagination, Autoplay, EffectCoverflow ],
+
+  loop: true,
+  effect: "coverflow",
+  grabCursor: true,
+  lazy: true,
+
+  slidesPerView: 4,
+  spaceBetween: 20,
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination--gallery-desktop',
+    clickable: true,
+  },
 });

@@ -8,17 +8,36 @@
   color: var(--main-background-color);
 }
 
+.footer__wrapper {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
 .footer-contacts {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 18px;
+
+  @media screen and (max-width: 767.98px) {
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.footer__logo {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
 }
 
 .footer-contact__link {
-  display: flex;
-  justify-content: left;
-  align-items: center;
   padding-top: 5px;
   padding-bottom: 5px;
 
@@ -28,6 +47,10 @@
   &:focus {
     color: var(--accent-color);
   }
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
 .footer-contact__icon {
@@ -43,15 +66,57 @@
 }
 
 .footer__working-hours {
-  margin-bottom: 18px;
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 18px;
+  }
 }
 
-.footer__links {
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+.footer__working-hours--mobile {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.footer__working-hours--tablet {
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
+
   text-align: left;
+}
+
+.working-hours__item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.footer__list {
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+.footer__item {
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width:1440px) {
+    &:not(:last-child) {
+      margin-right: 180px;
+    }
+  }
+
+
 }
 
 .footer__link {
@@ -63,6 +128,21 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+}
+
+.footer__socials {
+  margin-bottom: 20px;
+  
+  @media screen and (min-width:768px) {
+    justify-content: end;
+    margin-right: 55px;
+  }
+} 
+
+.footer-socials__item {
+  @media screen and (min-width:768px) {
+    transform: translateY(-35px);
   }
 }
 

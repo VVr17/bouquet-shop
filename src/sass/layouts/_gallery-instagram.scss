@@ -1,7 +1,3 @@
-// .gallery__title {
-//   margin-bottom: 10px;
-// }
-
 .gallery__link {
   display: block;
   font-weight: 500;
@@ -15,8 +11,31 @@
   }
 }
 
+.swiper-mobile {
+  @media screen and (min-width:768px) {
+    display: none;
+  }
+}
 
-.swiper-pagination--gallery {
+.swiper-tablet {
+  @media screen and (max-width:767.98px) {
+    display: none;
+  }
+
+  @media screen and (min-width:1439.98px){
+    display: none;
+  }
+}
+
+.swiper-desktop {
+  @media screen and (max-width:1439.98px){
+    display: none;
+  }
+}
+
+.swiper-pagination--gallery-mobile,
+.swiper-pagination--gallery-tablet,
+.swiper-pagination--gallery-desktop {
   --swiper-theme-color: #987045;
   text-align: center;
 }
