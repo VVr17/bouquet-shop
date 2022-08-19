@@ -1,0 +1,16 @@
+.catalog__card {
+  padding: 20px 10px;
+  background-color: var(--white-color);
+  color: var(--accent-text-color);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.28;
+}
+
+.catalog-links__icon {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}

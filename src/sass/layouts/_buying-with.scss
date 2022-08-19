@@ -1,8 +1,23 @@
 
 .buiyng-with-list {
   margin-bottom: 10px;
+
+  @media screen and (min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
 
-.buiyng-with-item:not(:last-child) {
-  margin-bottom: 20px;
+.buiyng-with-item {
+  @media screen and (max-width:767.98px) {
+    
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width:768px) {
+    flex-basis: calc((100% - 20px) / 2);
+  }
 }

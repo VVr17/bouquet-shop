@@ -6,4 +6,11 @@
 
 .catalog-links__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.catalog-links__item {
+  flex-basis: calc((100% - 40px) / 3);
 }

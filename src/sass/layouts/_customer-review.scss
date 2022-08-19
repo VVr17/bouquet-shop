@@ -11,16 +11,17 @@
   line-height: 2.21;
   background-color: var(--white-color);
   border-radius: 4px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  
+  @media screen and (min-width:768px) {  
+    font-size: 14px;
+    line-height: 2.16;
+  }
 
-  // @include mq('tablet') {
-  //   font-size: 14px;
-  //   line-height: 2.16;
-  // }
-
-  // @include mq('desktop') {
-  //   font-size: 16px;
-  //   line-height: 1.86;
-  // }
+  @media screen and (min-width: 1440px) {
+    font-size: 16px;
+    line-height: 1.86;
+  }
 }
 
 .customer-review__picture {
@@ -45,19 +46,20 @@
   background-color: var(--customer-review-card-background-color);
   border-radius: 4px;
 
-  // @include mq('tablet') {
-  //   max-width: 620px;
-  //   padding-top: 68px;
-  //   padding-left: 6px;
-  //   padding-right: 6px;
-  // }
+  @media screen and (min-width:768px){
+    margin: 0 auto;
+    max-width: 620px;
+    padding-top: 68px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-  // @include mq('desktop') {
-  //   max-width: 968px;
-  //   padding-top: 68px;
-  //   padding-left: 74px;
-  //   padding-right: 72px;
-  // }
+  @media screen and (min-width:1440px){
+    max-width: 968px;
+    padding-top: 68px;
+    padding-left: 74px;
+    padding-right: 72px;
+  }
 }
 
 .swiper-slide {
@@ -77,15 +79,15 @@
   padding-right: 8px;
   border-radius: 4px;
 
-  // @include mq('tablet') {
-  //   padding-right: 50px;
-  //   padding-left: 42px;
-  // }
+  @media screen and (min-width:768px) {
+    padding-right: 50px;
+    padding-left: 42px;
+  }
 
-  // @include mq('desktop') {
-  //   padding-right: 35px;
-  //   padding-left: 36px;
-  // }
+  @media screen and (min-width:1440px) {
+    padding-right: 35px;
+    padding-left: 36px;
+  }
 }
 
 .customer-review__description {
@@ -113,15 +115,13 @@
   line-height: 1.86;
   font-weight: 500;
 
-  // @include mq('tablet') {
-  //   font-size: 16px;
-  //   line-height: 1.86;
-  // }
+  @media screen and (min-width:768px) {
+    font-size: 16px;
+  }
 
-  // @include mq('desktop') {
-  //   font-size: 20px;
-  //   line-height: 1.86;
-  // }
+  @media screen and (min-width:1440px) {
+    font-size: 20px;
+  }
 }
 
 .customer-review__name::before {
