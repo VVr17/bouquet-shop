@@ -14,6 +14,21 @@
     }
 }
 
+.to-catalog--tablet {
+  @media screen and (min-width:1440px) {
+    display: none;
+  }
+}
+
+.to-catalog--desktop {
+  @media screen and (max-width:1439.98px) {
+    display: none;
+  }
+  position: absolute;
+  top: 5px;
+  right: 40px;
+}
+
 .to-catalog__icon {
   margin-left: 10px;
   fill: currentColor;

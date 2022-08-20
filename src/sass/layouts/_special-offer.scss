@@ -4,6 +4,12 @@
   }
 }
 
+.special-offer__container {
+  @media screen and (min-width:1440px) {
+    position: relative; 
+  }
+}
+
 .special-offer-list {
   margin-bottom: 10px;
 
@@ -25,6 +31,10 @@
   @media screen and (min-width:768px) {
     flex-basis: calc((100% - 20px) / 2);
   }
+
+  @media screen and (min-width:1440px) {
+    flex-basis: calc((100% - 80px) / 4);
+  }
 }
 
 .accent-sign {
@@ -39,5 +49,9 @@
   font-size: 14px;
   display: block;
   margin-bottom: 30px;
+}
+
+.special-offer__to-catalog {
+  top: 35px;
 }
 

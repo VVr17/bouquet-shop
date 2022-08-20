@@ -24,11 +24,20 @@
 
 .section__title {
 font-family: var(--fouth-font);
+color: var(--accent-text-color);
 font-weight: 700;
 font-size: 28px;
 line-height: 1.18;
 letter-spacing: 0.05em;
 display: block;
 margin-bottom: 30px;
+
+  @media screen and (min-width:768px) {
+    font-size: 32px;
+  }
+
+  @media screen and (min-width:1440px) {
+    font-size: 36px;
+  }
 }
 

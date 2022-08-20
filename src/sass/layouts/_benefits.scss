@@ -11,7 +11,8 @@
   }
 
   @media screen and (min-width:1440px) {
-    max-width: 1440px;
+    max-width: 1920px;
+    padding: 50px;
   }
 }
 
@@ -29,6 +30,10 @@
 .benefits__border {
   background-color: var(--accent-background-color);
   padding: 35px 10px;
+
+  @media screen and (min-width:1440px) {
+    padding: 50px 20px;
+  }
 }
 
 .benefits__list {
@@ -63,5 +68,5 @@
 
 
 .benefits__title {
-  margin-bottom: 8px;
+  color: var(--secondary-text-color);
 }

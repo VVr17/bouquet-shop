@@ -10,6 +10,10 @@
 }
 
 .socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   transition: color 250ms var(--transition-timing);
 
   &:hover,
