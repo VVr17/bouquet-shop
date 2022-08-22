@@ -3,9 +3,21 @@
     <a name="about"></a>
     <h2 class="section__title">Про нас</h2>
     <div class="about__upperside-wrapper">
-      <img class="image about__image" src="./images/about/about-image-1-sm.jpg" alt=""
-        width="616" >
-      <div>
+      <div class="about__image-thumb">
+        <picture>
+          <source media="(min-width:1440px)" srcset="
+            ./images/about/about-image-1-lg.jpg 1x,
+            ./images/about/about-image-1-lg@2x.jpg 2x" type="image/jpg">
+
+          <source srcset=" 
+            ./images/about/about-image-1-sm.jpg 1x,
+            ./images/about/about-image-1-sm@2x.jpg 2x" type="image/jpg">
+
+            <img class="image about__image" src="./images/about/about-image-1-sm.jpg" alt=""
+            width="320" loading="lazy">
+        </picture>
+      </div>
+      <div class="about__apper-text-group">
         <p class="about__text">Хорошо, когда в одном месте можно найти подарок для всех членов семьи, для коллеги и
           партнёра, для наставника и вдохновителя.
         </p>

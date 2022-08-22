@@ -1,6 +1,12 @@
 .about {
   @media screen and (min-width:768px) {
     font-size: 18px;
+    line-height: 1.4;
+  }
+
+  @media screen and (min-width:1440px) {
+    font-size: 20px;
+    line-height: 1.6;
   }
 }
 
@@ -12,7 +18,16 @@
   }
 }
 
-.about__image {
+.about__apper-text-group {
+  width: 370px;
+
+  @media screen and (min-width:1440px) {
+    width: 530px;
+  }
+}
+
+.about__image-thumb {
+  width: 320px;
   @media screen and (max-width:767.98px) {
     margin-bottom: 30px;
   }
@@ -20,6 +35,15 @@
   @media screen and (min-width:768px) {
     margin-right: 30px;
   }
+
+  @media screen and (min-width:1440px) {
+    width: 616px;
+  }
+}
+
+.about__image {
+  width: 100%;
+
 }
 
 
