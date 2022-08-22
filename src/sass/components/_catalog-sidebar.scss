@@ -1,0 +1,50 @@
+.catalog__sidebar {
+  @media screen and (max-width:1439.98px) {
+    display: none;
+  }
+
+  width: 330px;
+  margin-right: 50px;
+}
+
+
+.filter__title {
+	padding: 10px;
+	width: 280px;
+  margin-bottom: 15px;
+
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+
+  background-color: var(--secondary-color);
+  color: var(--secondary-text-color);
+	border-radius: 4px;
+
+}
+
+.reset-filter {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.reset-filter__icon {
+  fill: var(--filter-reset-icon-color);
+}
+
+.catalog-sidebar__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.catalog-sidebar__inner-item {
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

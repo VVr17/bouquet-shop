@@ -4,8 +4,8 @@
   }
 }
 
-.recommendation-list {
-  margin-bottom: 10px;
+.recommendation__list {
+  margin-bottom: 20px;
 
   @media screen and (min-width:768px) {
     display: flex;
@@ -14,7 +14,7 @@
   }
 }
 
-.recommendation-item {
+.recommendation__item {
   @media screen and (max-width:767.98px) {
     &:not(:last-child) {
       margin-bottom: 20px;

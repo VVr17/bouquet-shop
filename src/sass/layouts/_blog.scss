@@ -1,0 +1,97 @@
+.blog__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.blog__article {
+  padding: 20px 10px 40px 10px;
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.21;
+  background-color: var(--white-color);
+  border-radius: 4px;
+  // box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5),
+    -23px 0 20px -23px rgba(0, 0, 0, 0.3), 23px 0 20px -23px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.05) inset;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 16px;
+    line-height: 1.92;
+  }
+}
+
+.blog__picture {
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.blog__wrapper {
+  display: flex;
+  margin-bottom: 20px;
+  padding-top: 74px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: var(--customer-review-card-background-color);
+  border-radius: 4px;
+
+  @media screen and (min-width: 768px) {
+    margin: 0 auto 20px auto;
+    max-width: 620px;
+    padding-top: 68px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 968px;
+    padding-top: 68px;
+    padding-left: 74px;
+    padding-right: 72px;
+  }
+}
+
+.blog__gradient-wrapper {
+  position: relative;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    #e1e1e1 1px,
+    transparent 1px,
+    transparent 31px
+  );
+  padding-left: 15px;
+  padding-right: 8px;
+  border-radius: 4px;
+
+  @media screen and (min-width: 768px) {
+    padding-right: 50px;
+    padding-left: 42px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-right: 35px;
+    padding-left: 36px;
+  }
+}
+
+.blog__description {
+  transform: translateY(-30px);
+  display: block;
+}
+
+.blog__gradient-wrapper::before {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  content: '';
+  display: block;
+  width: 54px;
+  height: 40px;
+  background-image: url(../images/customer-review/inverted-commas.svg);
+  background-position: left top;
+  background-repeat: no-repeat;
+  transform: translateY(-100%);
+}
