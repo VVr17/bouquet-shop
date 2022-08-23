@@ -8,25 +8,95 @@
     Збросити все
   </p>
 
-  <ul class="list catalog-sidebar__list filter">
-    <li class="catalog-sidebar__item">
-      <h3 class="filter__title">Категорія</h3>
-      <ul class="list catalog-sidebar__inner-list">
-        <li class="catalog-sidebar__inner-item">Букети з цукерок</li>
-        <li class="catalog-sidebar__inner-item">Букети з фруктів</li>
-        <li class="catalog-sidebar__inner-item">Букети з горіхів</li>
-        <li class="catalog-sidebar__inner-item">Чоловічі букети</li>
-        <li class="catalog-sidebar__inner-item">Дитячі букети</li>
-      </ul>
-    </li>
-    <li class="catalog-sidebar__item filter__item">
-      <h3 class="filter__title">Ціна</h3>
-      <ul class="list catalog-sidebar__inner-list">
-        <li class="catalog-sidebar__inner-item">200 - 400 грн </li>
-        <li class="catalog-sidebar__inner-item">400 - 700 грн </li>
-        <li class="catalog-sidebar__inner-item">700 - 100 грн </li>
-        <li class="catalog-sidebar__inner-item"> > 1000 грн </li>
-      </ul>
-    </li>
-  </ul>
+  <form class="filter-form">
+    <div class="filter-form__group" role="group" aria-labelledby="category">
+      <p class="filter-form__title" id="category">Категорія</p>
+      <label class="filter-form__label checkbox-label">
+        <input class="checkbox" type="checkbox" name="category" value="candies">
+        <span class="checkbox__icon-thumb">
+          <svg class="checkbox__icon" width="13px" height="13px">
+            <use href="./images/sprite.svg#icon-check"></use>
+          </svg>
+        </span>
+        Букети з цукерок
+      </label>
+      <label class="filter-form__label checkbox-label">
+        <input class="checkbox" type="checkbox" name="category" value="fruits">
+        <span class="checkbox__icon-thumb">
+          <svg class="checkbox__icon" width="13px" height="13px">
+            <use href="./images/sprite.svg#icon-check"></use>
+          </svg>
+        </span>
+        Букети з фруктів
+      </label>
+      <label class="filter-form__label checkbox-label">
+        <input class="checkbox" type="checkbox" name="category" value="nuts">
+        <span class="checkbox__icon-thumb">
+          <svg class="checkbox__icon" width="13px" height="13px">
+            <use href="./images/sprite.svg#icon-check"></use>
+          </svg>
+        </span>
+        Букети з горіхів
+      </label>
+      <label class="filter-form__label checkbox-label">
+        <input class="checkbox" type="checkbox" name="category" value="for-men">
+        <span class="checkbox__icon-thumb">
+          <svg class="checkbox__icon" width="13px" height="13px">
+            <use href="./images/sprite.svg#icon-check"></use>
+          </svg>
+        </span>
+        Чоловічі букети
+      </label>
+      <label class="filter-form__label checkbox-label">
+        <input class="checkbox" type="checkbox" name="category" value="for-children">
+        <span class="checkbox__icon-thumb">
+          <svg class="checkbox__icon" width="13px" height="13px">
+            <use href="./images/sprite.svg#icon-check"></use>
+          </svg>
+        </span>
+        Дитячі букети
+      </label>
+    </div>
+
+    <div class="filter-form__group" role="group" aria-labelledby="price">
+      <p class="filter-form__title" id="price">Ціна</p>
+      <label class="filter-form__label checkbox-label">
+        <input class="checkbox" type="checkbox" name="category" value="400">
+        <span class="checkbox__icon-thumb">
+          <svg class="checkbox__icon" width="13px" height="13px">
+            <use href="./images/sprite.svg#icon-check"></use>
+          </svg>
+        </span>
+        200 - 400 грн
+      </label>
+      <label class="filter-form__label checkbox-label">
+        <input class="checkbox" type="checkbox" name="category" value="700">
+        <span class="checkbox__icon-thumb">
+          <svg class="checkbox__icon" width="13px" height="13px">
+            <use href="./images/sprite.svg#icon-check"></use>
+          </svg>
+        </span>
+        400 - 700 грн
+      </label>
+      <label class="filter-form__label checkbox-label">
+        <input class="checkbox" type="checkbox" name="category" value="1000">
+        <span class="checkbox__icon-thumb">
+          <svg class="checkbox__icon" width="13px" height="13px">
+            <use href="./images/sprite.svg#icon-check"></use>
+          </svg>
+        </span>
+        700 - 1000 грн
+      </label>
+      <label class="filter-form__label checkbox-label">
+        <input class="checkbox" type="checkbox" name="category" value=">1000">
+        <span class="checkbox__icon-thumb">
+          <svg class="checkbox__icon" width="13px" height="13px">
+            <use href="./images/sprite.svg#icon-check"></use>
+          </svg>
+        </span>
+        > 1000 грн
+      </label>
+    </div>
+  </form>
+
 </aside>
