@@ -1,4 +1,5 @@
 .product-card{
+  position: relative;
   padding:10px 10px 24px 10px;
   background-color: var(--white-color);
 
@@ -21,6 +22,8 @@
 }
 
 .product-card__price {
+  font-weight: 600;
+  color: var(--accent-text-color);
   margin-bottom: 20px;
 }
 
@@ -28,6 +31,5 @@
   max-width:300px;
   width: 100%;
   display: inline-block;
-  margin-top: auto;
-
+  margin: auto auto 0 auto;
 }
