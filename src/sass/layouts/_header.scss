@@ -54,8 +54,12 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.29;
+
+  @media screen and (min-width:1440px) {
+    font-size: 18px;
+  }
 }
 
 .header-downside__item:not(:last-child) {

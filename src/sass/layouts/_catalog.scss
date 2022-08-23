@@ -1,10 +1,15 @@
-.catalog-wrapper {
+.catalog__content-container {
   display: flex;
   flex-direction: row-reverse;
 }
 
+.catalog-wrapper {
+  text-align: center;
+}
+
 .catalog__list {
   flex-grow: 1;
+  margin-bottom: 30px;
 
   @media screen and (min-width:768px) {
     display: flex;

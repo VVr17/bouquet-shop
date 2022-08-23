@@ -6,7 +6,13 @@
 
 .navigation-item {
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 12px;
+  }
+
+  @media screen and (min-width:1440px) {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
   }
 }
 
