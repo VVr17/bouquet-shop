@@ -5,22 +5,63 @@
       зв'язку.
       Ми обов'язково з Вами зв'яжемося</p>
 
-    <button class="button" type="submit">Відправити</button>
-
-    <!-- <form class="form" method="post">
-      <label class="form__group">
-        <input class="form__input" type="name" placeholder=" ">
-        <span class="form__label">Ім'я*</span>
-      </label>
-      <label class="form__group">
-        <input class="form__input" type="tel" placeholder=" ">
-        <span class="form__label">Телефон*</span>
-      </label>
-      <label class="form__group form__group--message">
-        <textarea class="form__input form__input--message" name="user-message" rows=5" placeholder=" "></textarea>
-        <span class="form__label">Повідомлення</span>
-      </label>
-      <button class="button" type="submit">Відправити</button>
-    </form> -->
+    <button class="button" type="submit" data-modal-open>Написати</button>
   </div>
 </section>
+
+<!-- Modal window-->
+    <div class="backdrop backdrop--is-hidden" data-modal>
+      <div class="modal">
+        <button class="btn-close" aria-label="закрыть модальное окно" data-modal-close>
+          <svg class="btn-close__icon" width="18px" height="18px">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+  
+        <strong class="modal__title"> Залиште, будь-ласка, свої дані та Ваше питання і ми Вам передзвонимо</strong>
+        <form class="question-form" name="order_form">
+          <label class="question-form__label">
+            <span class="question-form__text">Ім'я</span>
+            <span class="question-form__wrapper">
+              <input class="question-form__input" type="text" name="name" minlength="3">
+              <svg class="question-form__icon" width="18px" height="18px">
+                <use href="./images/sprite.svg#icon-modal-person">
+                </use>
+              </svg>
+            </span>
+            <span class="question-form__assistance-message">
+              Ім'я повинно складатися мінімум з 3х символів
+            </span>
+          </label>
+          <label class="question-form__label">
+            <span class="question-form__text">Телефон</span>
+            <span class="question-form__wrapper">
+              <input class="question-form__input" type="tel" name="tel">
+              <svg class="question-form__icon" width="18px" height="18px">
+                <use href="./images/sprite.svg#icon-modal-phone">
+                </use>
+              </svg>
+            </span>
+            <span class="question-form__assistance-message">+38 (999) 111-11-11</span>
+          </label>
+          <label class="question-form__label">
+            <span class="question-form__text">Пошта</span>
+            <span class="question-form__wrapper">
+              <input class="question-form__input" type="email" name="email">
+              <svg class="question-form__icon" width="18px" height="18px">
+                <use href="./images/sprite.svg#icon-modal-email">
+                </use>
+              </svg>
+            </span>
+            <span class="question-form__assistance-message">mail@mail.com</span>
+          </label>
+          <label class="question-form__label question-form__label--margin">
+            <span class="question-form__text">Ваше запитання</span>
+            <textarea class="question-form__input question-form__input--padding" name="feedback" rows="7"
+              placeholder="Введіть текст"></textarea>
+          </label> 
+          <button type="submit" class="button button__main modal__button">Відправити</button>
+        </form>
+      </div>
+    </div>
+  

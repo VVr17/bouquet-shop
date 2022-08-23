@@ -5,6 +5,7 @@
 
 @import './utils/variables';
 @import './utils/visually-hiddem';
+@import './utils/mixin';
 
 @import './components/button';
 @import './components/logo';
@@ -18,6 +19,11 @@
 @import './components/catalog-sidebar';
 @import './components/product-card-label';
 @import './components/form-checkbox';
+@import './components/modal/modal';
+@import './components/modal/backdrop';
+@import './components/modal/btn-close';
+@import './components/modal/question-form-modal';
+
 
 @import './layouts/mobile-menu';
 @import './layouts/section';

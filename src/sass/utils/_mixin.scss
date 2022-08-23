@@ -1,0 +1,22 @@
+
+@mixin borderedWithoutTop($color) {
+	border-bottom: 1px solid $color;
+	border-left: 1px solid $color;
+	border-right: 1px solid $color;
+}
+
+@mixin centeredFlex($type: flex) {
+	display: $type;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin circle($diameter) {
+	width: $diameter;
+	height: $diameter;
+	border-radius: 50%;
+}
+
+// @mixin transition($property) {
+// 	transition: $property 250ms $transition-timing;
+// }
