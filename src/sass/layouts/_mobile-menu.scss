@@ -1,4 +1,11 @@
 .mobile-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: var(--main-background-color);
+
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -6,6 +13,7 @@
 
 .mobile-header__upperside {
   position: relative;
+  background-color: var(--white-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,10 +79,10 @@
 // MOBILE_MENU
 .mobile-menu-backdrop {
   position: fixed;
-  z-index: 5;
+  z-index: 50;
   top: 0;
   right: 0;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   background-color: var(--backdrop-color);
 
