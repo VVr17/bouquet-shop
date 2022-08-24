@@ -1,8 +1,8 @@
   // core version + navigation, pagination modules:
   import Swiper, { Pagination, Autoplay, EffectCoverflow } from 'swiper';
   import 'swiper/swiper-bundle.min.css';
-
-const gallerySliderMobile = document.querySelector('.js-gallery-swiper-mobile');
+(()=>{
+  const gallerySliderMobile = document.querySelector('.js-gallery-swiper-mobile');
 const gallerySliderTablet = document.querySelector('.js-gallery-swiper-tablet');
 const gallerySliderDesktop = document.querySelector('.js-gallery-swiper-desktop');
 
@@ -74,3 +74,4 @@ const swiperDesktop = new Swiper(gallerySliderDesktop, {
     clickable: true,
   },
 });
+})()

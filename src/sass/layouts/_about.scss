@@ -18,8 +18,8 @@
   }
 }
 
-.about__apper-text-group {
-  width: 370px;
+.about__upper-text-group {
+  max-width: 360px;
 
   @media screen and (min-width:1440px) {
     width: 530px;
