@@ -1,3 +1,32 @@
+.recommendation {
+  @media screen and (min-width: 1720px) {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.recommendation::before {
+  @media screen and (min-width: 1720px) {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom: 140px;
+    left: 0;
+    width: 202px;
+    height: 831px;
+    background-image: url(../images/bg-images/leaf-8-lg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg-images/leaf-8-lg@2x.png);
+    }
+  }
+}
+
 .recommendation__container {
   @media screen and (min-width:1440px) {
     position: relative;
@@ -12,6 +41,7 @@
     flex-wrap: wrap;
     gap: 20px;
   }
+
 }
 
 .recommendation__item {

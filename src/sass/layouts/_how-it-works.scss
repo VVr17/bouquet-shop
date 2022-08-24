@@ -1,4 +1,6 @@
 .how-it-works {
+  position: relative;
+
   padding-top: 50px;
   padding-left: 10px;
   padding-right: 10px;
@@ -8,24 +10,133 @@
   color: var(--secondary-text-color);
   text-align: center;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     max-width: 768px;
   }
 
-  @media screen and (min-width:1440px) {
+  @media screen and (min-width: 1440px) {
     max-width: 1920px;
   }
 }
 
+.how-it-works::before {
+  content: '';
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 101px;
+  height: 60px;
+  background-image: url(../images/bg-images/leaf-2-sm.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/bg-images/leaf-2-sm@2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 124px;
+    height: 74px;
+    background-image: url(../images/bg-images/leaf-3-sm.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg-images/leaf-3-sm@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 265px;
+    height: 156px;
+
+    background-image: url(../images/bg-images/leaf-2-lg.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg-images/leaf-2-lg@2x.png);
+    }
+  }
+}
+
+.how-it-works::after {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  top: 4;
+  left: 102;
+  width: 88px;
+  height: 52px;
+  background-image: url(../images/bg-images/gold-sign-1-sm.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/bg-images/gold-sign-1-sm@2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    top: 32px;
+    left: 162px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    top: 2px;
+    left: 290px;
+    width: 210px;
+    height: 125px;
+
+    background-image: url(../images/bg-images/gold-sign-1-lg.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg-images/gold-sign-1-lg@2x.png);
+    }
+  }
+}
+
 .how-it-works__list {
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
   }
 
-  @media screen and (min-width:1440px) {
-    flex-wrap:nowrap;
+  @media screen and (min-width: 1440px) {
+    flex-wrap: nowrap;
+    position: relative;
+    z-index: 3;
+  }
+}
+
+.how-it-works__container::before {
+  @media screen and (min-width: 1440px) {
+    content: '';
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    right: 0;
+    width: 190px;
+    height: 207px;
+    background-image: url(../images/bg-images/leaf-6-lg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg-images/leaf-6-lg@2x.png);
+    }
   }
 }
 
@@ -43,14 +154,13 @@
 
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
 
-  @media screen and (max-width:767.98px) {
-    
+  @media screen and (max-width: 767.98px) {
     &:not(:last-child) {
       margin-bottom: 10px;
     }
   }
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 20px) / 2);
   }
 }
@@ -61,7 +171,7 @@
   background-color: var(--accent-background-color);
   padding: 15px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     height: 100%;
   }
 }

@@ -1,13 +1,85 @@
 .footer {
+  position: relative;
+
   max-width: 1920px;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 18px;
   font-size: 14px;
   line-height: 1.21;
-  text-align: center;
   background-color: var(--accent-background-color);
   color: var(--main-background-color);
+
+  @media screen and (min-width:768px) {
+    padding-top: 30px;
+  }
+}
+
+.footer::before {
+  content: '';
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    width: 111px;
+    height: 67px;
+    background-image: url(../images/bg-images/leaf-4-sm.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg-images/leaf-4-sm@2x.png);
+    }
+
+  @media screen and (min-width: 768px) {
+    width: 139px;
+    height: 96px;
+    background-image: url(../images/bg-images/leaf-4-md.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg-images/leaf-4-md@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 265px;
+    height: 158px;
+
+    background-image: url(../images/bg-images/leaf-4-lg.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg-images/leaf-4-lg@2x.png);
+    }
+  }
+}
+
+.footer::after {
+  @media screen and (min-width: 1440px) {
+    content: '';
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    width: 190px;
+    height: 215px;
+    background-image: url(../images/bg-images/leaf-1-lg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg-images/leaf-1-lg@2x.png);
+    }
+  }
 }
 
 .footer__wrapper {
@@ -16,26 +88,37 @@
     align-items: flex-start;
     justify-content: space-between;
   }
+
+  @media screen and (min-width: 1440px) {
+    justify-content: left;
+  }
 }
 
-.footer-contacts {
+.footer-contact__list {
   display: flex;
+  flex-direction: column;
 
   @media screen and (max-width: 767.98px) {
-    justify-content: space-around;
-    align-items: center;
     margin-bottom: 18px;
+  align-items: center;
   }
 
-  @media screen and (min-width: 768px) {
-    flex-direction: column;
-    align-items: flex-start;
+  @media screen and (min-width:768px) {
+    align-items: flex-start;    
+  }
+
+  @media screen and (min-width:1440px) {
+    margin-right: 130px;  
   }
 }
 
 .footer__logo {
-  @media screen and (min-width: 768px) {
-    margin-bottom: 10px;
+  display: block;
+  margin-bottom: 10px;
+
+  @media screen and (min-width:768px) {
+    padding-left: 60px;
+    margin-bottom: 20px;
   }
 }
 
@@ -52,8 +135,12 @@
   }
 
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    justify-content: left;
+  }
 }
 
 .footer-contact__icon {
@@ -71,6 +158,7 @@
 
 .footer__working-hours {
   @media screen and (max-width: 767.98px) {
+    text-align: center;
     margin-bottom: 18px;
   }
 }
@@ -103,6 +191,10 @@
 
   @media screen and (max-width: 767.98px) {
     margin-bottom: 20px;
+  }
+
+  @media screen and (min-width:1440px) {
+    margin-right: 180px;
   }
 }
 
@@ -151,4 +243,8 @@
   font-size: 10px;
   text-align: left;
   letter-spacing: 0.2em;
+
+  @media screen and (min-width:1440px) {
+    text-align: center;
+  }
 }

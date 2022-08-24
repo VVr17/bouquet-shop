@@ -1,7 +1,10 @@
 .benefits {
+  position: relative;
+
   padding: 10px;
   max-width: 360px;
   margin: 0 auto;
+
   background-color: var(--accent-background-color);
   color: var(--secondary-text-color);
   text-align: center;
@@ -16,6 +19,74 @@
   }
 }
 
+.benefits::before {
+  content: '';
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 124px;
+  height: 74px;
+  background-image: url(../images/bg-images/leaf-3-sm.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/bg-images/leaf-3-sm@2x.png);
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 265px;
+    height: 156px;
+
+    background-image: url(../images/bg-images/leaf-2-lg.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg-images/leaf-2-lg@2x.png);
+    }
+  }
+}
+
+.benefits::after {
+  @media screen and (min-width: 768px) {
+    content: '';
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    width: 107px;
+    height: 117px;
+    background-image: url(../images/bg-images/leaf-5-md.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg-images/leaf-5-md@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 209px;
+    height: 226px;
+
+    background-image: url(../images/bg-images/leaf-5-lg.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg-images/leaf-5-lg@2x.png);
+    }
+  }
+}
+
 .benefits__container {
   padding: 5px;
   background-image: linear-gradient(
@@ -25,6 +96,44 @@
     #f2d495 51.11%,
     #ab8d60 100%
   );
+
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+  }
+}
+
+.benefits__container::before {
+
+  content: '';
+    position: absolute;
+    z-index: 6;
+    bottom: 0;
+    left: 0;
+    width: 78px;
+    height: 87px;
+    background-image: url(../images/bg-images/leaf-1-sm.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/bg-images/leaf-1-sm@2x.png);
+  }
+
+
+  @media screen and (min-width: 1440px) {
+    width: 190px;
+    height: 215px;
+    background-image: url(../images/bg-images/leaf-1-lg.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg-images/leaf-1-lg@2x.png);
+    }
+  }
 }
 
 .benefits__border {
@@ -32,11 +141,13 @@
   padding: 35px 10px;
 
   @media screen and (min-width: 1440px) {
-    padding: 50px 20px;
+    padding: 50px 30px;
   }
 }
 
 .benefits__list {
+  position: relative;
+  z-index: 3;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -44,11 +155,57 @@
   }
 
   @media screen and (min-width: 1440px) {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
     flex-wrap: nowrap;
   }
 }
 
+.benefits__list::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -64px;
+  left: -5px;
+  width: 108px;
+  height: 60px;
+  background-image: url(../images/bg-images/gold-sign-2-sm.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/bg-images/gold-sign-2-sm@2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    top: -42px;
+    left: 40px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    top: -92px;
+    left: 26px;
+    width: 220px;
+    height: 137px;
+
+    background-image: url(../images/bg-images/gold-sign-2-lg.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg-images/gold-sign-2-lg@2x.png);
+    }
+  }
+}
+
 .benefits__item {
+  position: relative;
+  z-index: 3;
+
   padding: 10px 24px 24px 24px;
   border-radius: 4px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 1), -23px 0 20px -23px rgba(0, 0, 0, 0.8),
@@ -66,7 +223,14 @@
 }
 
 .benefits__title {
+  position: relative;
+  z-index: 4;
   color: var(--secondary-text-color);
+  @media screen and (max-width: 767.98px) {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .benefits__card-title {
