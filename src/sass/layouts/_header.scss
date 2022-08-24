@@ -9,16 +9,9 @@
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    max-width: 768px;
+    max-width: 1920px;
     z-index: 10;
     background-color: var(--white-color);  
-  }
-  @media screen and (min-width:1440px) {
-    max-width: 1440px;
-  }
-
-  @media screen and (min-width:1920px) {
-    max-width: 1920px;
   }
 }
 
