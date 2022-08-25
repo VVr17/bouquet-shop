@@ -1,0 +1,48 @@
+<li class='catalog__item product-card'>
+  <p class='product-card__label product-card__label--hit'>Хіт продажів</p>
+  <picture>
+    <source
+      media='(min-width:1440px)'
+      srcset='
+              ./images/bouquet-cards/bouquet-image-1-lg.webp 1x, 
+              ./images/bouquet-cards/bouquet-image-1-lg@2x.webp 2x'
+      type='image/webp'
+    />
+
+    <source
+      media='(min-width:1440px)'
+      srcset='
+                ./images/bouquet-cards/bouquet-image-1-lg.jpg 1x, 
+                ./images/bouquet-cards/bouquet-image-1-lg@2x.jpg 2x'
+      type='image/jpg'
+    />
+
+    <source
+      media='(max-width:1439.98px)'
+      srcset=' 
+                ./images/bouquet-cards/bouquet-image-1-sm.webp 1x,
+                ./images/bouquet-cards/bouquet-image-1-sm@2x.webp 2x'
+      type='image/webp'
+    />
+
+    <source
+      media='(max-width:1439.98px)'
+      srcset=' 
+              ./images/bouquet-cards/bouquet-image-1-sm.jpg 1x,
+                ./images/bouquet-cards/bouquet-image-1-sm@2x.jpg 2x'
+      type='image/jpg'
+    />
+
+    <img
+      class='image product-card__image'
+      src='./images/bouquet-cards/bouquet-image-1-sm.jpg'
+      alt='ягідний букет'
+      width='300'
+      height='250'
+      loading='lazy'
+    />
+  </picture>
+  <h3 class='product-card__title'>Ягідний букет</h3>
+  <p class='product-card__price'>360 ГРН</p>
+  <button class='button product-card__button' type='button'>Замовити</button>
+</li>

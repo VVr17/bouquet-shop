@@ -1,11 +1,14 @@
+import throttle from 'lodash.throttle';
+
+
 const refs = {
   header: document.querySelector('.header'),
 }
 
 let lastScroll = 0; // previous scroll position
-const defaultOffset = 400;
+const defaultOffset = 500;
 
-window.addEventListener('scroll', onWindowScroll)
+window.addEventListener('scroll', throttle(onWindowScroll,100))
 
 // current scroll position
 const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop

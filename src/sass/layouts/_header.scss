@@ -4,7 +4,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    height: var(--header-height);
+    // height: var(--header-height);
     max-width: 1920px;
     z-index: 10;
     transition: transform 250ms var(--transition-timing);

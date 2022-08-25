@@ -28,8 +28,8 @@
       url(../images/hero/hero-image-1-sm@2x.jpg);
   }
 
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
+  @media screen and (min-width:361px) {
+    max-width: 480px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.3),
@@ -47,6 +47,10 @@
         ),
         url(../images/hero/hero-image-1-md@2x.jpg);
     }
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
   }
 
   @media screen and (min-width: 769px) {
