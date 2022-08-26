@@ -19,7 +19,7 @@ const containHidden = () => refs.header.classList.contains('header--is-hidden')
 
 function onWindowScroll() {
   if(scrollPosition() > lastScroll && !containHidden() && scrollPosition() > defaultOffset) {
-    // scroll down
+    // scroll down 
     refs.header.classList.add('header--is-hidden')
 
   } else if (scrollPosition() < lastScroll && containHidden()) {

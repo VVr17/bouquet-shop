@@ -1,38 +1,34 @@
-(()=>{
-    const refs = {
-      openModalBtn: document.querySelector("[data-question-form-modal-open]"),
-      closeModalBtn: document.querySelector("[data-question-form-modal-close]"),
-      modal: document.querySelector("[data-question-form-modal]"),
-    };
+function openModal(backdrop) {
+  return () => {
+    backdrop.classList.remove('backdrop--is-hidden');
+    document.body.classList.add('modal-open');
+    document.addEventListener('keydown', onEscKeyDown(backdrop));
+  };
+}
 
-    refs.openModalBtn.addEventListener("click", openModal);
-    refs.closeModalBtn.addEventListener("click", closeModal);
-    refs.modal.addEventListener('click', onBackdropClick);
+function closeModal(backdrop) {
+  return () => {
+    backdrop.classList.add('backdrop--is-hidden');
+    document.body.classList.remove('modal-open');
+    document.removeEventListener('keydown', onEscKeyDown);
+  };
+}
 
-    function openModal() {
-      refs.modal.classList.remove("backdrop--is-hidden");
-      document.body.classList.add("modal-open");
-      document.addEventListener('keydown', onEscKeyDown);
+function onBackdropClick(event) {
+  if (event.target.closest('.modal')) {
+    return;
+  }
+  closeModal(event.target.closest('.backdrop'))();
+}
+
+function onEscKeyDown(backdrop) {
+
+  return (event) => {
+    if (event.code !== 'Escape') {
+      return;
     }
+    closeModal(backdrop)();
+  }
+}
 
-    function closeModal() {
-      refs.modal.classList.add("backdrop--is-hidden");
-      document.body.classList.remove("modal-open");
-      document.removeEventListener('keydown', onEscKeyDown);
-    }
-
-    function onBackdropClick(event) {
-      if(event.target.closest('.modal')){
-        return;
-      }
-      closeModal();       
-    }
-
-    function onEscKeyDown(event) {
-      if(event.code !== 'Escape') {
-        return
-      }
-      closeModal();
-    }
-})()
-
+export { openModal, closeModal, onBackdropClick };

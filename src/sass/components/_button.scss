@@ -18,7 +18,6 @@
 	border: 1px solid var(--secondary-color);
   background-color: var(--secondary-color);
   color: var(--secondary-text-color);
-	// border-radius: 25px;
 	border-radius: 4px;
 
 	transition: background-color 250ms var(--transition-timing),
@@ -31,8 +30,12 @@
 		background-color: var(--accent-background-color);
     border-color: var(--accent-background-color);
 		color: var(--accent-color);
-		// color: var(--accent-button-color);
-
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	}
+
+	&--transparent {
+		border: 1px solid var(--accent-background-color);
+		color: var(--accent-text-color);
+		background-color: transparent;
 	}
 }

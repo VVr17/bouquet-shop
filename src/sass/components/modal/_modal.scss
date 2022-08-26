@@ -1,15 +1,11 @@
 .modal {
 	position: relative;
-	padding: 40px;
-
-	background-color: var(--white-color);
 	color: var(--accent-text-color);
 	transform: scale(1);
 	transition: transform 250ms var(--transition-timing);
 	border-radius: 4px;
 
 	@media screen and (min-width: 480px) and (orientation: portrait) {
-		width: 420px;
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -17,23 +13,16 @@
 	}
 
 	@media screen and (min-width: 480px) and (orientation: landscape) {
-		width: 420px;
 		position: relative;
-		padding: 40px;
 		margin: auto auto;
 		transform: scale(1);
 	}
 
 	@media screen and (min-width: 768px) and (min-height: 655px) {
-		width: 450px;
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%) scale(1);
-	}
-
-	@media screen and (min-width: 1440px) {
-		width: 528px;
 	}
 }
 

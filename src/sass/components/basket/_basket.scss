@@ -1,0 +1,17 @@
+.basket{
+  background-color: transparent;
+	cursor: pointer;
+  border: none;
+  color: currentColor;
+  padding: 5px;
+
+  &:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
+}
+
+.basket__icon {
+  --color3: currentColor;
+  margin-right: 0;
+}

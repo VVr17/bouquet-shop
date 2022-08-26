@@ -14,7 +14,9 @@
 @import './components/product-card';
 @import './components/to-catalog';
 @import './components/map-pin';
-@import './components/basket';
+@import './components/basket/basket';
+@import './components/basket/basket-card';
+@import './components/basket/basket-modal';
 @import './components/catalog-card';
 @import './components/catalog-sidebar';
 @import './components/product-card-label';
@@ -24,6 +26,7 @@
 @import './components/modal/btn-close';
 @import './components/modal/question-form-modal';
 @import './components/ancor-link';
+@import './components/counter';
 
 
 @import './layouts/mobile-menu';

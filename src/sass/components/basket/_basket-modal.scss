@@ -1,0 +1,52 @@
+.basket__modal{
+  padding: 10px;
+  background-color: var(--basket-background-color);
+
+  @media screen and (min-width:360px) {
+    padding: 20px;
+  }
+  @media screen and (max-width:479.98px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width:480px) {
+    padding: 30px;
+  }
+
+  @media screen and (min-width: 480px) and (orientation: portrait) {
+		width: 420px;
+	}
+
+	@media screen and (min-width: 480px) and (orientation: landscape) {
+		width: 420px;
+	}
+
+	@media screen and (min-width: 768px) and (min-height: 655px) {
+		width: 600px;
+	}
+
+	@media screen and (min-width: 1440px) {
+		width: 1000px;
+	}
+}
+
+.basket-list {
+  margin-bottom: 20px;
+}
+
+.basket__item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.basket__total-price {
+  margin-bottom: 20px;
+  text-align: end;
+  font-weight: 600;
+}
+
+.basket__button {
+  display: block;
+  margin: 0 auto;
+}

@@ -2,9 +2,32 @@
   @media screen and (max-width:767.98px) {
     display: none;
   }
+
+  position: relative;
+  z-index: 4;
 }
 
+.catalog-links::before {
+  @media screen and (min-width: 768px) {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 715px;
+    height: 667px;
+    background-image: url(../images/bg-images/flower.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+
 .catalog-links__list {
+  position: relative;
+  z-index: 5;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

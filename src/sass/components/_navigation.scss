@@ -17,6 +17,8 @@
 }
 
 .navigation__link {
+  padding-top: 15px;
+  padding-bottom: 15px;
   transition: border-color 250ms var(--transition-timing);
 
   &:hover,

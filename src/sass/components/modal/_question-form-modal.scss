@@ -1,4 +1,37 @@
 /* FORM */
+.question-form__modal {
+	background-color: var(--white-color);
+	padding: 40px 10px;
+
+	@media screen and (min-width:360px) {
+		padding: 40px 20px;
+	}
+
+	@media screen and (min-width:480px) {
+		padding: 40px 30px;
+	}
+
+	@media screen and (min-width: 480px) and (orientation: portrait) {
+		width: 420px;
+	}
+
+	@media screen and (min-width: 480px) and (orientation: landscape) {
+		width: 420px;
+	}
+
+	@media screen and (min-width:768px) {
+		padding: 40px;
+	}
+
+	@media screen and (min-width: 768px) and (min-height: 655px) {
+		width: 450px;
+	}
+
+	@media screen and (min-width: 1440px) {
+		width: 528px;
+	}
+
+}
 
 .question-form__label {
 	position: relative;
