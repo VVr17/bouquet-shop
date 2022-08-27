@@ -1,45 +1,43 @@
 .basket-card{
   position: relative;
-  padding:10px 10px 24px 10px;
-  // background-color: var(--basket-background-color);
+  padding:10px;
   background-color: var(--white-color);
-
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   text-align: left;
-  display: flex;
+  // display: flex;
   font-size: 12px;
 }
 
 .basket-card__picture-wrapper {
-  width: 40%;
   margin-right: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: 80px;
 
   @media screen and (min-width:768px) {
-    width: 30%;
-  }
-
-  @media screen and (min-width:1440px) {
-    width: 20%;
+    margin-right: 30px;
+    width: 100px;
   }
 }
 
 .basket-card__image {
-  // max-width:80px;
   width: 100%;
-  margin-bottom: 5px;
 }
 
-.basket-card__text-wrapper {
+.basket-card__title-wrapper {
   display: flex;
-  flex-direction: column;
+}
+
+.basket-card__counter-wrapper {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  @media screen and (min-width:768px) {
+    justify-content: end;
+  }
 }
 
 .basket-card__price {
-  text-align: end;
   font-weight: 600;
+  font-size: 16px;
 }

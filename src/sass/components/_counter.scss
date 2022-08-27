@@ -1,9 +1,13 @@
 .counter {
-  margin: 0 auto;
   display: flex;
-  justify-content: center;
   align-items: center;
-  
+  @media screen and (min-width:768px) {
+    margin-right: 120px;
+  }
+
+  @media screen and (min-width:1440px) {
+    margin-right: 160px;
+  }
 }
 
 .counter__button {
