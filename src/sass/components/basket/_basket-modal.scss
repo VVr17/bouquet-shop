@@ -21,7 +21,6 @@
   }
 }
 
-
 .backdrop.is-hidden .basket__modal {
 	transform: scale(0.3);
 }
@@ -42,7 +41,6 @@
 
   @media screen and (min-width:768px) {
     padding: 12px 14px;
-
   }
 }
 
@@ -61,6 +59,7 @@
   @media screen and (max-width:767.98px) {
     max-width: 98%;
     margin: 0 auto;
+    margin-bottom: 20px;
   }
 
   @media screen and (min-width:768px) {
@@ -90,18 +89,14 @@
   width: 100%;
 }
 
-.basket__to-catalog {
-  margin-left: 10px;
-  justify-content: flex-start;
+.basket--back-button {
+
+  @media screen and (max-width:767.98px) {
+    display: block;
+    margin: 0 auto;
+  }
 
   @media screen and (min-width:768px) {
-    margin-left: 24px;
-    transform: translateY(-30px);
+    transform: translateY(-41px);
   }
-}
-
-.basket__icon {
-  fill: currentColor;
-  margin-right: 10px;
-  transform: rotate(-180deg);
 }
