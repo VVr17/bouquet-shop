@@ -1,45 +1,45 @@
 {{#each this}}
-<li class='catalog__item product-card'>
-  <picture>
-    <source
-      media='(min-width:1440px)'
-      srcset='
+  <li class='product-card'>
+    <picture>
+      <source
+        media='(min-width:1440px)'
+        srcset='
               {{urlLgWebp}} 1x, 
               {{urlLgWebp2x}} 2x'
-      type='image/webp'
-    />
-    <source
-      media='(min-width:1440px)'
-      srcset='
+        type='image/webp'
+      />
+      <source
+        media='(min-width:1440px)'
+        srcset='
                 {{urlLg}} 1x, 
                 {{urlLg2x}} 2x'
-      type='image/jpg'
-    />
-    <source
-      media='(max-width:1439.98px)'
-      srcset=' 
+        type='image/jpg'
+      />
+      <source
+        media='(max-width:1439.98px)'
+        srcset=' 
                 {{urlSmWebp}} 1x,
                 {{urlSmWebp2x}} 2x'
-      type='image/webp'
-    />
-    <source
-      media='(max-width:1439.98px)'
-      srcset=' 
+        type='image/webp'
+      />
+      <source
+        media='(max-width:1439.98px)'
+        srcset=' 
               {{urlSm}} 1x,
               {{urlSm2x}} 2x'
-      type='image/jpg'
-    />
-    <img
-      class='image product-card__image'
-      src={{urlSm}}
-      alt={{title}}
-      width='300'
-      height='250'
-      loading='lazy'
-    />
-  </picture>
-  <h3 class='product-card__title'>{{title}}</h3>
-  <p class='product-card__price'>{{price}} ГРН</p>
-  <button class='button product-card__button' type='button'>Замовити</button>
-</li>
+        type='image/jpg'
+      />
+      <img
+        class='image product-card__image'
+        src={{urlSm}}
+        alt={{title}}
+        width='300'
+        height='250'
+        loading='lazy'
+      />
+    </picture>
+    <h3 class='product-card__title'>{{title}}</h3>
+    <p class='product-card__price'>{{price}} ГРН</p>
+    <button class='button product-card__button' type='button'>Замовити</button>
+  </li>
 {{/each}}

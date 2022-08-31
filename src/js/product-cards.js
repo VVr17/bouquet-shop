@@ -18,7 +18,7 @@ export default productCards = [
     urlSmWebp: './images/bouquet-cards/bouquet-image-2-sm.webp',
     urlLg: './images/bouquet-cards/bouquet-image-2-lg.jpg',
     urlLgWebp: './images/bouquet-cards/bouquet-image-2-lg.webp',
-    title: 'Букет "Ковбаска-сир"',
+    title: 'Букет «Ковбаска-сир»',
     price: 810,
   },
   {
