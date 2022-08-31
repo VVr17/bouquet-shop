@@ -1,0 +1,324 @@
+{
+  "productCards": [
+    {
+      "id": 1,
+      "title": "Ягідний букет",
+      "price": 360,
+      "urlSm": "bouquet-image-1-sm.d58ba7af.jpg",
+      "urlSm2x": "bouquet-image-1-sm@2x.91c1cd5b.jpg",
+      "urlSmWebp": "bouquet-image-1-sm.e5a206cf.webp",
+      "urlSmWebp2x": "bouquet-image-1-sm@2x.724ee6fe.webp",
+      "urlLg": "bouquet-image-1-lg.cc806459.jpg",
+      "urlLg2x": "bouquet-image-1-lg@2x.8b8b4751.jpg",
+      "urlLgWebp": "bouquet-image-1-lg.fbf88d32.webp",
+      "urlLgWebp2x": "bouquet-image-1-lg@2x.6712e38c.webp"
+    },
+    {
+      "id": 2,
+      "title": "Букет \"Ковбаска-сир\"",
+      "price": 810,
+      "urlSm": "bouquet-image-2-sm.5ff416c4.jpg",
+      "urlSm2x": "bouquet-image-2-sm@2x.06312ebd.jpg",
+      "urlSmWebp": "bouquet-image-2-sm.3721082c.webp",
+      "urlSmWebp2x": "bouquet-image-2-sm@2x.1019bae3.webp",
+      "urlLg": "bouquet-image-2-lg.88c6d250.jpg",
+      "urlLg2x": "bouquet-image-2-lg@2x.f6516c93.jpg",
+      "urlLgWebp": "bouquet-image-2-lg.8587dc55.webp",
+      "urlLgWebp2x": "bouquet-image-2-lg@2x.003b8ad9.webp"
+    },
+    {
+      "id": 3,
+      "title": "Букет з абрикосів",
+      "price": 375,
+      "urlSm": "bouquet-image-3-sm.643f5c0e.jpg",
+      "urlSm2x": "bouquet-image-3-sm@2x.ec311b43.jpg",
+      "urlSmWebp": "bouquet-image-3-sm.33b0c3d8.webp",
+      "urlSmWebp2x": "bouquet-image-3-sm@2x.8985220f.webp",
+      "urlLg": "bouquet-image-2-lg.88c6d250.jpg",
+      "urlLg2x": "bouquet-image-3-lg@2x.67a28415.jpg",
+      "urlLgWebp": "bouquet-image-3-lg.6de9bf8f.webp",
+      "urlLgWebp2x": "bouquet-image-3-lg@2x.0a05d9e1.webp"
+    },
+    {
+      "id": 4,
+      "title": "Букет «Milka»",
+      "price": 410,
+      "urlSm": "bouquet-image-4-sm.9413fe12.jpg",
+      "urlSm2x": "bouquet-image-4-sm.9413fe12.jpg",
+      "urlSmWebp": "bouquet-image-4-sm.a469a4bc.webp",
+      "urlSmWebp2x": "bouquet-image-4-sm@2x.85683fe1.webp",
+      "urlLg": "bouquet-image-4-lg.a5c98f47.jpg",
+      "urlLg2x": "bouquet-image-4-lg@2x.153497ce.jpg",
+      "urlLgWebp": "bouquet-image-4-lg.1bdd551a.webp",
+      "urlLgWebp2x": "bouquet-image-4-lg@2x.af43485c.webp"
+    },
+    {
+      "id": 5,
+      "title": "Букет «Кіндер-сюрприз»",
+      "price": 540,
+      "urlSm": "bouquet-image-5-sm.2f1552af.jpg",
+      "urlSm2x": "bouquet-image-5-sm@2x.e8d82179.jpg",
+      "urlSmWebp": "bouquet-image-5-sm.acd9dbd0.webp",
+      "urlSmWebp2x": "bouquet-image-5-sm@2x.d2450424.webp",
+      "urlLg": "bouquet-image-5-lg.96319d3a.jpg",
+      "urlLg2x": "bouquet-image-5-lg@2x.d3410a4c.jpg",
+      "urlLgWebp": "bouquet-image-5-lg.523c3e0a.webp",
+      "urlLgWebp2x": "bouquet-image-5-lg@2x.6c989095.webp"
+    },
+    {
+      "id": 6,
+      "title": "Букет «Cерце з сухофруктів»",
+      "price": 575,
+      "urlSm": "bouquet-image-5-sm.2f1552af.jpg",
+      "urlSm2x": "bouquet-image-6-sm@2x.e1e81fd5.jpg",
+      "urlSmWebp": "bouquet-image-5-sm.acd9dbd0.webp",
+      "urlSmWebp2x": "bouquet-image-6-sm@2x.cf9a83e2.webp",
+      "urlLg": "bouquet-image-6-lg.def6761d.jpg",
+      "urlLg2x": "bouquet-image-6-lg@2x.7311269d.jpg",
+      "urlLgWebp": "bouquet-image-6-lg.cc5d4d46.webp",
+      "urlLgWebp2x": "bouquet-image-6-lg@2x.70fdb60d.webp"
+    },
+    {
+      "id": 7,
+      "title": "Букет з горіхів",
+      "price": 630,
+      "urlSm": "bouquet-image-7-sm.b54b0ccf.jpg",
+      "urlSm2x": "bouquet-image-7-sm@2x.ee0d4acb.jpg",
+      "urlSmWebp": "bouquet-image-7-sm.924b11c9.webp",
+      "urlSmWebp2x": "bouquet-image-7-sm@2x.6ecddf8f.webp",
+      "urlLg": "bouquet-image-7-lg.6837d383.jpg",
+      "urlLg2x": "bouquet-image-7-lg@2x.537c44ba.jpg",
+      "urlLgWebp": "bouquet-image-7-lg.3225a42d.webp",
+      "urlLgWebp2x": "bouquet-image-7-lg@2x.1af4022a.webp"
+    },
+    {
+      "id": 8,
+      "title": "Букет з зефіру та шоколаду",
+      "price": 280,
+      "urlSm": "bouquet-image-8-sm.c89cbbe7.jpg",
+      "urlSm2x": "bouquet-image-8-sm@2x.774d7125.jpg",
+      "urlSmWebp": "bouquet-image-8-sm.2166587d.webp",
+      "urlSmWebp2x": "bouquet-image-8-sm@2x.465fc464.webp",
+      "urlLg": "bouquet-image-8-lg.188bc360.jpg",
+      "urlLg2x": "bouquet-image-8-lg.188bc360.jpg",
+      "urlLgWebp": "bouquet-image-8-lg.992ac7ca.webp",
+      "urlLgWebp2x": "bouquet-image-8-lg@2x.f3317caa.webp"
+    },
+    {
+      "id": 9,
+      "title": "Букет «Єдиноріжка» з маршмеллоу",
+      "price": 340,
+      "urlSm": "./images/bouquet-cards/bouquet-image-9-sm.jpg",
+      "urlSmWebp": "./images/bouquet-cards/bouquet-image-9-sm.webp",
+      "urlLg": "./images/bouquet-cards/bouquet-image-9-lg.jpg",
+      "urlLgWebp": "./images/bouquet-cards/bouquet-image-9-lg.webp"
+    },
+    {
+      "id": 10,
+      "title": "Букет з сухофруктами",
+      "price": 520,
+      "urlSm": "./images/bouquet-cards/bouquet-image-10-sm.jpg",
+      "urlSmWebp": "./images/bouquet-cards/bouquet-image-10-sm.webp",
+      "urlLg": "./images/bouquet-cards/bouquet-image-10-lg.jpg",
+      "urlLgWebp": "./images/bouquet-cards/bouquet-image-10-lg.webp"
+    },
+    {
+      "id": 11,
+      "title": "Букет «Ковбаска-сир-багет»",
+      "price": 760,
+      "urlSm": "./images/bouquet-cards/bouquet-image-11-sm.jpg",
+      "urlSmWebp": "./images/bouquet-cards/bouquet-image-11-sm.webp",
+      "urlLg": "./images/bouquet-cards/bouquet-image-11-lg.jpg",
+      "urlLgWebp": "./images/bouquet-cards/bouquet-image-11-lg.webp"
+    },
+    {
+      "id": 12,
+      "title": "Букет з горіхами та сухофруктами",
+      "price": 610,
+      "urlSm": "./images/bouquet-cards/bouquet-image-12-sm.jpg",
+      "urlSmWebp": "./images/bouquet-cards/bouquet-image-12-sm.webp",
+      "urlLg": "./images/bouquet-cards/bouquet-image-12-lg.jpg",
+      "urlLgWebp": "./images/bouquet-cards/bouquet-image-12-lg.webp"
+    },
+    {
+      "id": 13,
+      "title": "Букет з шоколаду та зефіру",
+      "price": 360,
+      "urlSm": "./images/bouquet-cards/bouquet-image-13-sm.jpg",
+      "urlSmWebp": "./images/bouquet-cards/bouquet-image-13-sm.webp",
+      "urlLg": "./images/bouquet-cards/bouquet-image-13-lg.jpg",
+      "urlLgWebp": "./images/bouquet-cards/bouquet-image-13-lg.webp"
+    },
+    {
+      "id": 14,
+      "title": "Букет «Мармеладки»",
+      "price": 335,
+      "urlSm": "./images/bouquet-cards/bouquet-image-14-sm.jpg",
+      "urlSmWebp": "./images/bouquet-cards/bouquet-image-14-sm.webp",
+      "urlLg": "./images/bouquet-cards/bouquet-image-14-lg.jpg",
+      "urlLgWebp": "./images/bouquet-cards/bouquet-image-14-lg.webp"
+    },
+    {
+      "id": 15,
+      "title": "Букет ягідний з квітами",
+      "price": 405,
+      "urlSm": "./images/bouquet-cards/bouquet-image-15-sm.jpg",
+      "urlSmWebp": "./images/bouquet-cards/bouquet-image-15-sm.webp",
+      "urlLg": "./images/bouquet-cards/bouquet-image-15-lg.jpg",
+      "urlLgWebp": "./images/bouquet-cards/bouquet-image-15-lg.webp"
+    },
+    {
+      "id": 16,
+      "title": "Букет «Cухофруктовий вінок»",
+      "price": 550,
+      "urlSm": "./images/bouquet-cards/bouquet-image-16-sm.jpg",
+      "urlSmWebp": "./images/bouquet-cards/bouquet-image-16-sm.webp",
+      "urlLg": "./images/bouquet-cards/bouquet-image-16-lg.jpg",
+      "urlLgWebp": "./images/bouquet-cards/bouquet-image-16-lg.webp"
+    },
+    {
+      "id": 17,
+      "title": "Букет «М'ясний кошик»",
+      "price": 1160,
+      "urlSm": "./images/bouquet-cards/bouquet-image-17-sm.jpg",
+      "urlSmWebp": "./images/bouquet-cards/bouquet-image-17-sm.webp",
+      "urlLg": "./images/bouquet-cards/bouquet-image-17-lg.jpg",
+      "urlLgWebp": "./images/bouquet-cards/bouquet-image-17-lg.webp"
+    },
+    {
+      "id": 18,
+      "title": "Букет з сухофруктів з зеленню",
+      "price": 490,
+      "urlSm": "./images/bouquet-cards/bouquet-image-18-sm.jpg",
+      "urlSmWebp": "./images/bouquet-cards/bouquet-image-18-sm.webp",
+      "urlLg": "./images/bouquet-cards/bouquet-image-18-lg.jpg",
+      "urlLgWebp": "./images/bouquet-cards/bouquet-image-18-lg.webp"
+    },
+    {
+      "id": 19,
+      "title": "Букет з печіва",
+      "price": 320,
+      "urlSm": "./images/bouquet-cards/bouquet-image-19-sm.jpg",
+      "urlSmWebp": "./images/bouquet-cards/bouquet-image-19-sm.webp",
+      "urlLg": "./images/bouquet-cards/bouquet-image-19-lg.jpg",
+      "urlLgWebp": "./images/bouquet-cards/bouquet-image-19-lg.webp"
+    },
+    {
+      "id": 20,
+      "title": "Букет «Millenium&Ferrero» з фіставшками",
+      "price": 820,
+      "urlSm": "./images/bouquet-cards/bouquet-image-20-sm.jpg",
+      "urlSmWebp": "./images/bouquet-cards/bouquet-image-20-sm.webp",
+      "urlLg": "./images/bouquet-cards/bouquet-image-20-lg.jpg",
+      "urlLgWebp": "./images/bouquet-cards/bouquet-image-20-lg.webp"
+    },
+    {
+      "id": 21,
+      "title": "Букет «Розовий маршмеллоу»",
+      "price": 495,
+      "urlSm": "./images/bouquet-cards/bouquet-image-21-sm.jpg",
+      "urlSmWebp": "./images/bouquet-cards/bouquet-image-21-sm.webp",
+      "urlLg": "./images/bouquet-cards/bouquet-image-21-lg.jpg",
+      "urlLgWebp": "./images/bouquet-cards/bouquet-image-21-lg.webp"
+    },
+    {
+      "id": 22,
+      "title": "Букет «Cерце з сухофруктами»",
+      "price": 610,
+      "urlSm": "./images/bouquet-cards/bouquet-image-22-sm.jpg",
+      "urlSmWebp": "./images/bouquet-cards/bouquet-image-22-sm.webp",
+      "urlLg": "./images/bouquet-cards/bouquet-image-22-lg.jpg",
+      "urlLgWebp": "./images/bouquet-cards/bouquet-image-22-lg.webp"
+    },
+    {
+      "id": 23,
+      "title": "Букет ягідний з полуницею",
+      "price": 480,
+      "urlSm": "./images/bouquet-cards/bouquet-image-23-sm.jpg",
+      "urlSmWebp": "./images/bouquet-cards/bouquet-image-23-sm.webp",
+      "urlLg": "./images/bouquet-cards/bouquet-image-23-lg.jpg",
+      "urlLgWebp": "./images/bouquet-cards/bouquet-image-23-lg.webp"
+    },
+    {
+      "id": 24,
+      "title": "Букет з сухофруктів з ананасною розою",
+      "price": 740,
+      "urlSm": "./images/bouquet-cards/bouquet-image-24-sm.jpg",
+      "urlSmWebp": "./images/bouquet-cards/bouquet-image-24-sm.webp",
+      "urlLg": "./images/bouquet-cards/bouquet-image-24-lg.jpg",
+      "urlLgWebp": "./images/bouquet-cards/bouquet-image-24-lg.webp"
+    },
+    {
+      "id": 25,
+      "title": "Букет «Міккі-маус» з маршмеллоу",
+      "price": 480,
+      "urlSm": "./images/bouquet-cards/bouquet-image-25-sm.jpg",
+      "urlSmWebp": "./images/bouquet-cards/bouquet-image-25-sm.webp",
+      "urlLg": "./images/bouquet-cards/bouquet-image-25-lg.jpg",
+      "urlLgWebp": "./images/bouquet-cards/bouquet-image-25-lg.webp"
+    },
+    {
+      "id": 26,
+      "title": "Букет «Хогвардс» з цукатами та зефіром",
+      "price": 570,
+      "urlSm": "./images/bouquet-cards/bouquet-image-26-sm.jpg",
+      "urlSmWebp": "./images/bouquet-cards/bouquet-image-26-sm.webp",
+      "urlLg": "./images/bouquet-cards/bouquet-image-26-lg.jpg",
+      "urlLgWebp": "./images/bouquet-cards/bouquet-image-26-lg.webp"
+    },
+    {
+      "id": 27,
+      "title": "Букет з цукатами та сухофруктами",
+      "price": 600,
+      "urlSm": "./images/bouquet-cards/bouquet-image-27-sm.jpg",
+      "urlSmWebp": "./images/bouquet-cards/bouquet-image-27-sm.webp",
+      "urlLg": "./images/bouquet-cards/bouquet-image-27-lg.jpg",
+      "urlLgWebp": "./images/bouquet-cards/bouquet-image-27-lg.webp"
+    },
+    {
+      "id": 28,
+      "title": "Букет з цукатами, сухофруктами та горіхами",
+      "price": 640,
+      "urlSm": "./images/bouquet-cards/bouquet-image-28-sm.jpg",
+      "urlSmWebp": "./images/bouquet-cards/bouquet-image-28-sm.webp",
+      "urlLg": "./images/bouquet-cards/bouquet-image-28-lg.jpg",
+      "urlLgWebp": "./images/bouquet-cards/bouquet-image-28-lg.webp"
+    },
+    {
+      "id": 29,
+      "title": "Букет з цукерок в коробці",
+      "price": 390,
+      "urlSm": "./images/bouquet-cards/bouquet-image-29-sm.jpg",
+      "urlSmWebp": "./images/bouquet-cards/bouquet-image-29-sm.webp",
+      "urlLg": "./images/bouquet-cards/bouquet-image-29-lg.jpg",
+      "urlLgWebp": "./images/bouquet-cards/bouquet-image-29-lg.webp"
+    },
+    {
+      "id": 30,
+      "title": "Букет з цукатами великий",
+      "price": 720,
+      "urlSm": "./images/bouquet-cards/bouquet-image-30-sm.jpg",
+      "urlSmWebp": "./images/bouquet-cards/bouquet-image-30-sm.webp",
+      "urlLg": "./images/bouquet-cards/bouquet-image-30-lg.jpg",
+      "urlLgWebp": "./images/bouquet-cards/bouquet-image-30-lg.webp"
+    },
+    {
+      "id": 31,
+      "title": "Букет «Lion-Snickers»",
+      "price": 520,
+      "urlSm": "./images/bouquet-cards/bouquet-image-31-sm.jpg",
+      "urlSmWebp": "./images/bouquet-cards/bouquet-image-31-sm.webp",
+      "urlLg": "./images/bouquet-cards/bouquet-image-31-lg.jpg",
+      "urlLgWebp": "./images/bouquet-cards/bouquet-image-31-lg.webp"
+    },
+    {
+      "id": 32,
+      "title": "Букет з цукатами в горщику",
+      "price": 390,
+      "urlSm": "./images/bouquet-cards/bouquet-image-32-sm.jpg",
+      "urlSmWebp": "./images/bouquet-cards/bouquet-image-32-sm.webp",
+      "urlLg": "./images/bouquet-cards/bouquet-image-32-lg.jpg",
+      "urlLgWebp": "./images/bouquet-cards/bouquet-image-32-lg.webp"
+    }
+  ]
+}

@@ -1,10 +1,14 @@
-export const productCards = [
+export default productCards = [
   {
     id: 1,
     urlSm: './images/bouquet-cards/bouquet-image-1-sm.jpg',
+    urlSm2x: './images/bouquet-cards/bouquet-image-1-sm@2x.jpg',
     urlSmWebp: './images/bouquet-cards/bouquet-image-1-sm.webp',
+    urlSmWebp2x: "./images/bouquet-cards/bouquet-image-1-sm@2x.webp",
     urlLg: './images/bouquet-cards/bouquet-image-1-lg.jpg',
+    urlLg2x: "./images/bouquet-cards/bouquet-image-1-lg@2x.jpg",
     urlLgWebp: './images/bouquet-cards/bouquet-image-1-lg.webp',
+    urlLgWebp2x: "./images/bouquet-cards/bouquet-image-1-lg@2x.webp",
     title: 'Ягідний букет',
     price: 360,
   },
