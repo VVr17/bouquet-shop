@@ -9,4 +9,4 @@ function markupProductCard(productCards) {
   galleryList.insertAdjacentHTML('beforeend',productCardTemplate(productCards))
 }
 
-markupProductCard([productCards[0],productCards[1],,productCards[2],,productCards[3],,productCards[4],,productCards[5]])
+// markupProductCard([productCards[0],productCards[1],productCards[2],productCards[3],productCards[4],productCards[5],productCards[6], productCards[7]])
