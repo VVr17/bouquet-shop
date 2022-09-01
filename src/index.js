@@ -4,5 +4,4 @@ import './js/modal';
 import './js/basket-modal';
 import './js/question-form';
 import './js/header-show';
-// import './js/product-cards';
 import './js/render-product-card';

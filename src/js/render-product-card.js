@@ -1,6 +1,16 @@
 import axios from 'axios';
 import productCardTemplate from "../templates/product-card.hbs";
 
+
+// class ProductList {
+//   constructor(selector) {
+//     this.ref = document.querySelector(selector)
+
+//   }
+
+// }
+
+
 const galleryList = document.querySelector('#catalog-list');
 
 async function fetchPhoto() {
@@ -27,5 +37,6 @@ async function fetchPhoto() {
     console.log(error.response.status);
   }
 }
+
 
 fetchPhoto();

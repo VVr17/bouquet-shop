@@ -1,31 +1,38 @@
 import throttle from 'lodash.throttle';
 
+class Header {
+  defaultOffset = 500;
 
-const refs = {
-  header: document.querySelector('.header'),
+  constructor(selector) {
+    this.ref = document.querySelector(selector);
+    this.lastScroll = 0; // previous scroll position
+  }
+
+  addHandler() {
+    window.addEventListener('scroll', throttle(onWindowScroll,100))
+  }
 }
 
-let lastScroll = 0; // previous scroll position
-const defaultOffset = 500;
+const header = new Header ('.header');
+header.addHandler();
 
-window.addEventListener('scroll', throttle(onWindowScroll,100))
 
 // current scroll position
 const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop
 
 // if header contains class "is-hidden"
-const containHidden = () => refs.header.classList.contains('header--is-hidden')
+const containHidden = () => header.ref.classList.contains('header--is-hidden')
 
 
 function onWindowScroll() {
-  if(scrollPosition() > lastScroll && !containHidden() && scrollPosition() > defaultOffset) {
+  if(scrollPosition() > header.lastScroll && !containHidden() && scrollPosition() > header.defaultOffset) {
     // scroll down 
-    refs.header.classList.add('header--is-hidden')
+    header.ref.classList.add('header--is-hidden')
 
-  } else if (scrollPosition() < lastScroll && containHidden()) {
+  } else if (scrollPosition() < header.lastScroll && containHidden()) {
     // scroll up
-    refs.header.classList.remove('header--is-hidden')
+    header.ref.classList.remove('header--is-hidden')
   }
 
-  lastScroll = scrollPosition();
+  header.lastScroll = scrollPosition();
 }

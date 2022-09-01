@@ -1,17 +1,11 @@
-import { openModal, closeModal, onBackdropClick } from "./modal.js";
+import Modal from './modal';
 
-  const refs = {
-    openModalBtn: document.querySelector("[data-basket-modal-open]"),
-    openModalMobileBtn:document.querySelector('[data-basket-mobile-modal-open]'),
-    closeModalBtn: document.querySelector("[data-basket-modal-close]"),
-    closeModalBtnDownside: document.querySelector('[data-basket-modal-close-button]'),
-    modal: document.querySelector("[data-basket-modal]"),
-  };
+const basketModal = new Modal ({
+  openModalBtn: '[data-basket-modal-open]',
+  openModalMobileBtn: '[data-basket-mobile-modal-open]',
+  closeModalBtn: '[data-basket-modal-close]',
+  closeModalBtnDownside: '[data-basket-modal-close-button]',
+  modal: '[data-basket-modal]',
+});
 
-  refs.openModalBtn.addEventListener("click", openModal(refs.modal));
-  refs.openModalMobileBtn.addEventListener("click", openModal(refs.modal));
-  refs.closeModalBtn.addEventListener("click", closeModal(refs.modal));
-  refs.closeModalBtnDownside.addEventListener("click", closeModal(refs.modal));
-  refs.modal.addEventListener('click', onBackdropClick);
-
-
+basketModal.addHandler();

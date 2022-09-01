@@ -3,8 +3,8 @@
   import 'swiper/swiper-bundle.min.css';
 (()=>{
   const gallerySliderMobile = document.querySelector('.js-gallery-swiper-mobile');
-const gallerySliderTablet = document.querySelector('.js-gallery-swiper-tablet');
-const gallerySliderDesktop = document.querySelector('.js-gallery-swiper-desktop');
+  const gallerySliderTablet = document.querySelector('.js-gallery-swiper-tablet');
+  const gallerySliderDesktop = document.querySelector('.js-gallery-swiper-desktop');
 
 
 const swiperMobile = new Swiper(gallerySliderMobile, {

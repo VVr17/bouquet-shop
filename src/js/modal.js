@@ -1,34 +1,72 @@
-function openModal(backdrop) {
-  return () => {
-    backdrop.classList.remove('is-hidden');
+export default class Modal {
+  constructor(selectors) {
+    this.refs = this.getRefs(selectors);
+  }
+
+  getRefs(selectors) {
+    const {
+      openModalBtn,
+      closeModalBtn,
+      modal,
+      openModalMobileBtn,
+      closeModalBtnDownside,
+    } = selectors;
+    const refs = {};
+    refs.openModalBtn = document.querySelector(openModalBtn);
+    refs.closeModalBtn = document.querySelector(closeModalBtn);
+    refs.modal = document.querySelector(modal);
+    if (openModalMobileBtn)
+      refs.openModalMobileBtn = document.querySelector(openModalMobileBtn);
+    if (closeModalBtnDownside)
+      refs.closeModalBtnDownside = document.querySelector(
+        closeModalBtnDownside
+      );
+
+    return refs;
+  }
+
+  addHandler() {
+    this.refs.openModalBtn.addEventListener('click', () => this.openModal());
+    this.refs.closeModalBtn.addEventListener('click', () => this.closeModal());
+    this.refs.modal.addEventListener('click', event =>
+      this.onBackdropClick(event)
+    );
+    if (this.refs.openModalMobileBtn)
+      this.refs.openModalMobileBtn.addEventListener('click', () =>
+        this.openModal()
+      );
+    if (this.refs.closeModalBtnDownside)
+      this.refs.closeModalBtnDownside.addEventListener('click', () =>
+        this.closeModal()
+      );
+  }
+
+  openModal() {
+    this.refs.modal.classList.remove('is-hidden');
     document.body.classList.add('modal-open');
-    document.addEventListener('keydown', onEscKeyDown(backdrop));
-  };
-}
+    document.addEventListener(
+      'keydown',
+      this.onEscKeyDown(this.closeModal.bind(this))
+    );
+  }
 
-function closeModal(backdrop) {
-  return () => {
-    backdrop.classList.add('is-hidden');
+  closeModal() {
+    this.refs.modal.classList.add('is-hidden');
     document.body.classList.remove('modal-open');
-    document.removeEventListener('keydown', onEscKeyDown);
-  };
-}
-
-function onBackdropClick(event) {
-  if (event.target.closest('.js-modal')) {
-    return;
+    document.removeEventListener('keydown', this.onEscKeyDown);
   }
-  closeModal(event.target.closest('.js-backdrop'))();
-}
 
-function onEscKeyDown(backdrop) {
+  onBackdropClick(event) {
+    if (event.target.closest('.js-modal')) return;
+    this.closeModal();
+  }
 
-  return (event) => {
-    if (event.code !== 'Escape') {
-      return;
-    }
-    closeModal(backdrop)();
+  onEscKeyDown(closeModal) {
+    return event => {
+      if (event.code !== 'Escape') {
+        return;
+      }
+      closeModal();
+    };
   }
 }
-
-export { openModal, closeModal, onBackdropClick };
