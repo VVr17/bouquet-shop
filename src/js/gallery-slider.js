@@ -1,77 +1,62 @@
-  // core version + navigation, pagination modules:
-  import Swiper, { Pagination, Autoplay, EffectCoverflow } from 'swiper';
-  import 'swiper/swiper-bundle.min.css';
-(()=>{
-  const gallerySliderMobile = document.querySelector('.js-gallery-swiper-mobile');
-  const gallerySliderTablet = document.querySelector('.js-gallery-swiper-tablet');
-  const gallerySliderDesktop = document.querySelector('.js-gallery-swiper-desktop');
+import Swiper, { Pagination, Autoplay, EffectCoverflow } from 'swiper';
+import 'swiper/swiper-bundle.min.css';
 
+(() => {
+  const gallerySlider = document.querySelector('.js-gallery-swiper');
 
-const swiperMobile = new Swiper(gallerySliderMobile, {
-  modules: [ Pagination, Autoplay, EffectCoverflow ],
+  const sliderParams = {
+    modules: [Pagination, Autoplay, EffectCoverflow],
 
-  loop: true,
-  effect: "coverflow",
-  grabCursor: true,
-  lazy: true,
+    loop: true,
+    effect: 'coverflow',
+    grabCursor: true,
+    lazy: true,
 
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination--gallery-mobile',
-    clickable: true,
-  },
-});
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  };
 
+  const swiper = new Swiper(gallerySlider, sliderParams);
 
-const swiperTablet = new Swiper(gallerySliderTablet, {
-  modules: [ Pagination, Autoplay, EffectCoverflow ],
+  // check when gallery will be within window view
+  const observer = new IntersectionObserver(onIntersection, { threshold: 0.5 });
+  let prevIntersectionRatio = 0.0;
 
-  loop: true,
-  effect: "coverflow",
-  grabCursor: true,
-  lazy: true,
+  window.addEventListener('resize', setParamsDueToWindowSize);
 
-  slidesPerView: 3,
-  spaceBetween: 20,
+  swiper.autoplay.stop();
+  observer.observe(gallerySlider);
+  setParamsDueToWindowSize();
 
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
+  function setParamsDueToWindowSize() {
+    if (window.matchMedia('(max-width:767.98px )').matches) {
+      swiper.params.slidesPerView = 1;
+      swiper.params.spaceBetween = 0;
+    } else if (window.matchMedia('(max-width:1439.98px )').matches) {
+      swiper.params.slidesPerView = 3;
+      swiper.params.spaceBetween = 20;
+    } else {
+      swiper.params.slidesPerView = 4;
+      swiper.params.spaceBetween = 20;
+    }
+  }
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination--gallery-tablet',
-    clickable: true,
-  },
-});
+  function onIntersection(entries, observer) {
+    entries.forEach(entry => {
+      if (entry.intersectionRatio > prevIntersectionRatio) {
+        swiper.autoplay.start();
+      } else {
+        swiper.autoplay.stop();
+      }
 
-
-const swiperDesktop = new Swiper(gallerySliderDesktop, {
-  modules: [ Pagination, Autoplay, EffectCoverflow ],
-
-  loop: true,
-  effect: "coverflow",
-  grabCursor: true,
-  lazy: true,
-
-  slidesPerView: 4,
-  spaceBetween: 20,
-
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination--gallery-desktop',
-    clickable: true,
-  },
-});
-})()
+      prevIntersectionRatio = entry.intersectionRatio;
+    });
+  }
+})();

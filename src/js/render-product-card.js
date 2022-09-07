@@ -38,5 +38,4 @@ async function fetchPhoto() {
   }
 }
 
-
 fetchPhoto();
