@@ -11,10 +11,12 @@ export default class Modal {
       openModalMobileBtn,
       closeModalBtnDownside,
     } = selectors;
+
     const refs = {};
     refs.openModalBtn = document.querySelector(openModalBtn);
     refs.closeModalBtn = document.querySelector(closeModalBtn);
     refs.modal = document.querySelector(modal);
+
     if (openModalMobileBtn)
       refs.openModalMobileBtn = document.querySelector(openModalMobileBtn);
     if (closeModalBtnDownside)

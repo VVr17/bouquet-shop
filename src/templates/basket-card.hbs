@@ -1,0 +1,45 @@
+<li class='basket__item basket-card'>
+  <div class='basket-card__title-wrapper'>
+    <div class='basket-card__picture-wrapper'>
+      <picture>
+        <source
+          srcset=' 
+                ./images/bouquet-cards/bouquet-image-4-sm.webp 1x,
+                ./images/bouquet-cards/bouquet-image-4-sm@2x.webp 2x'
+          type='image/webp'
+        />
+        <source
+          srcset=' 
+                ./images/bouquet-cards/bouquet-image-4-sm.jpg 1x,
+                ./images/bouquet-cards/bouquet-image-4-sm@2x.jpg 2x'
+          type='image/jpg'
+        />
+        <img
+          class='image basket-card__image'
+          src='./images/bouquet-cards/bouquet-image-4-sm.jpg'
+          alt='букет кіндер-сюрприз'
+          width='100'
+          height='83'
+          loading='lazy'
+        />
+      </picture>
+    </div>
+    <h3 class='basket-card__title'>Букет «Кіндер-сюрприз»</h3>
+  </div>
+  <div class='basket-card__counter-wrapper'>
+    <div class='counter'>
+      <button class='counter__button' type='button'>
+        <svg class='counter__icon' width='30px' height='30px'>
+          <use href='./images/sprite.svg#icon-minus'></use>
+        </svg>
+      </button>
+      <span class='counter__output'>0</span>
+      <button class='counter__button' type='button'>
+        <svg class='counter__icon' width='30px' height='30px'>
+          <use href='./images/sprite.svg#icon-plus'></use>
+        </svg>
+      </button>
+    </div>
+    <p class='basket-card__price'>540 грн</p>
+  </div>
+</li>

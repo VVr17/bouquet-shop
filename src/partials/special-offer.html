@@ -10,7 +10,7 @@
           <use href="./images/sprite.svg#icon-arrow-right"></use>
         </svg>
       </a>
-    <ul class="list special-offer__list">
+    <ul class="list special-offer__list" id="special-offer-list">
       <li class="special-offer__item product-card">
         <picture>
           <source media="(min-width:1440px)" srcset="
@@ -121,3 +121,107 @@
     </a>
   </div>
 </section>
+
+
+<!-- <ul class="list special-offer__list">
+  <li class="special-offer__item product-card">
+    <picture>
+      <source media="(min-width:1440px)" srcset="
+      ./images/bouquet-cards/bouquet-image-18-lg.webp 1x, 
+      ./images/bouquet-cards/bouquet-image-18-lg@2x.webp 2x" type="image/webp">
+
+      <source media="(min-width:1440px)" srcset="
+        ./images/bouquet-cards/bouquet-image-18-lg.jpg 1x, 
+        ./images/bouquet-cards/bouquet-image-18-lg@2x.jpg 2x" type="image/jpg">
+
+      <source srcset=" 
+        ./images/bouquet-cards/bouquet-image-18-sm.webp 1x,
+        ./images/bouquet-cards/bouquet-image-18-sm@2x.webp 2x" type="image/webp">
+
+      <source srcset=" 
+      ./images/bouquet-cards/bouquet-image-18-sm.jpg 1x,
+        ./images/bouquet-cards/bouquet-image-18-sm@2x.jpg 2x" type="image/jpg">
+
+      <img class=" image product-card__image" src="./images/bouquet-cards/bouquet-image-18-sm.jpg"
+        alt="букет з сухофруктів з зеленню" width="300" height="250" loading="lazy">
+    </picture>
+    <h3 class="product-card__title">Букет з сухофруктів з зеленню</h3>
+    <p class="product-card__price">490 UAH</p>
+    <button class="button product-card__button" type="button">Замовити</button>
+  </li>
+  <li class="special-offer__item product-card">
+    <picture>
+      <source media="(min-width:1440px)" srcset="
+      ./images/bouquet-cards/bouquet-image-1-lg.webp 1x, 
+      ./images/bouquet-cards/bouquet-image-1-lg@2x.webp 2x" type="image/webp">
+
+      <source media="(min-width:1440px)" srcset="
+        ./images/bouquet-cards/bouquet-image-1-lg.jpg 1x, 
+        ./images/bouquet-cards/bouquet-image-1-lg@2x.jpg 2x" type="image/jpg">
+
+      <source media="(max-width:1439.98px)" srcset=" 
+        ./images/bouquet-cards/bouquet-image-1-sm.webp 1x,
+        ./images/bouquet-cards/bouquet-image-1-sm@2x.webp 2x" type="image/webp">
+
+      <source media="(max-width:1439.98px)" srcset=" 
+      ./images/bouquet-cards/bouquet-image-1-sm.jpg 1x,
+        ./images/bouquet-cards/bouquet-image-1-sm@2x.jpg 2x" type="image/jpg">
+
+      <img class=" image product-card__image" src="./images/bouquet-cards/bouquet-image-1-sm.jpg"
+        alt="ягідний букет" width="300" height="250" loading="lazy">
+    </picture>
+    <h3 class="product-card__title">Ягідний букет</h3>
+    <p class="product-card__price">360 UAH</p>
+    <button class="button product-card__button" type="button">Замовити</button>
+  </li>
+  <li class=" special-offer__item product-card">
+    <picture>
+      <source media="(min-width:1440px)" srcset="
+      ./images/bouquet-cards/bouquet-image-8-lg.webp 1x, 
+      ./images/bouquet-cards/bouquet-image-8-lg@2x.webp 2x" type="image/webp">
+
+      <source media="(min-width:1440px)" srcset="
+        ./images/bouquet-cards/bouquet-image-8-lg.jpg 1x, 
+        ./images/bouquet-cards/bouquet-image-8-lg@2x.jpg 2x" type="image/jpg">
+
+      <source srcset=" 
+        ./images/bouquet-cards/bouquet-image-8-sm.webp 1x,
+        ./images/bouquet-cards/bouquet-image-8-sm@2x.webp 2x" type="image/webp">
+
+      <source srcset=" 
+      ./images/bouquet-cards/bouquet-image-8-sm.jpg 1x,
+        ./images/bouquet-cards/bouquet-image-8-sm@2x.jpg 2x" type="image/jpg">
+
+      <img class=" image product-card__image" src="./images/bouquet-cards/bouquet-image-8-sm.jpg"
+        alt="букет з зефіру та шоколаду" width="300" height="250" loading="lazy">
+    </picture>
+    <h3 class="product-card__title">Букет з зефіру та шоколаду</h3>
+    <p class="product-card__price">280 UAH</p>
+    <button class="button product-card__button" type="button">Замовити</button>
+  </li>
+  <li class=" special-offer__item product-card">
+    <picture>
+      <source media="(min-width:1440px)" srcset="
+      ./images/bouquet-cards/bouquet-image-9-lg.webp 1x, 
+      ./images/bouquet-cards/bouquet-image-9-lg@2x.webp 2x" type="image/webp">
+
+      <source media="(min-width:1440px)" srcset="
+        ./images/bouquet-cards/bouquet-image-9-lg.jpg 1x, 
+        ./images/bouquet-cards/bouquet-image-9-lg@2x.jpg 2x" type="image/jpg">
+
+      <source srcset=" 
+        ./images/bouquet-cards/bouquet-image-9-sm.webp 1x,
+        ./images/bouquet-cards/bouquet-image-9-sm@2x.webp 2x" type="image/webp">
+
+      <source srcset=" 
+      ./images/bouquet-cards/bouquet-image-9-sm.jpg 1x,
+        ./images/bouquet-cards/bouquet-image-9-sm@2x.jpg 2x" type="image/jpg">
+
+      <img class=" image product-card__image" src="./images/bouquet-cards/bouquet-image-9-sm.jpg"
+        alt="букет «Єдиноріжка»" width="300" height="250" loading="lazy">
+    </picture>
+    <h3 class="product-card__title">Букет «Єдиноріжка»</h3>
+    <p class="product-card__price">340 UAH</p>
+    <button class="button product-card__button" type="button">Замовити</button>
+  </li>
+</ul> -->

@@ -1,7 +1,9 @@
 import Swiper, { Pagination, Autoplay, EffectCoverflow } from 'swiper';
 import 'swiper/swiper-bundle.min.css';
 
-(() => {
+if (window.location.pathname === '/index.html') {
+  // in index.html
+
   const gallerySlider = document.querySelector('.js-gallery-swiper');
 
   const sliderParams = {
@@ -59,4 +61,4 @@ import 'swiper/swiper-bundle.min.css';
       prevIntersectionRatio = entry.intersectionRatio;
     });
   }
-})();
+}
