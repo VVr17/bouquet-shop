@@ -1,4 +1,4 @@
-import Modal from './helpers/modal';
+import Modal from '../../classes/modal';
 
 const questionFormModal = new Modal ({
   openModalBtn: '[data-question-form-modal-open]',

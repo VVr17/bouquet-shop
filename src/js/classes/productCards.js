@@ -1,4 +1,4 @@
-import ProductsData from './get-data';
+import ProductsData from './productsData';
 import productCardTemplate from '../../templates/product-card.hbs';
 
 const productsData = new ProductsData();
@@ -37,6 +37,10 @@ export default class ProductCards {
     }
   }
 
+  /**
+   * 
+   * @param {string} property recommendation, specialOffer
+   */
   async renderProductCards(property = '') {
     try {
       let items = [];

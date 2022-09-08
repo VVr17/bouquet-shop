@@ -1,4 +1,4 @@
-import ProductCards from './helpers/product-list';
+import ProductCards from '../../classes/productCards';
 
 if (window.location.pathname === '/catalog.html') {
   // in catalog.html

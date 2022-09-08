@@ -1,10 +1,11 @@
 import './js/helpers/validate-input-number';
-import './js/helpers/basket-cards-counter';
-import './js/basket-modal';
-import './js/catalog-list';
-import './js/gallery-slider';
+// import './js/helpers/basket-card-counter';
+import './js/helpers/modal/basket-modal';
+import './js/helpers/product-lists/catalog-list';
+import './js/helpers/gallery-slider';
 import './js/header-show';
 import './js/mobile-menu';
-import './js/question-form';
-import './js/recommendation-list';
-import './js/special-offer-list';
+import './js/helpers/modal/question-form';
+import './js/helpers/product-lists/recommendation-list';
+import './js/helpers/product-lists/special-offer-list';
+import './js/helpers/basket-counter';
