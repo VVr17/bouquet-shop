@@ -1,12 +1,12 @@
 {{!-- {{#each this}} --}}
-{{#each card}}
-  <li class='product-card'>
+{{#each this}}
+  <li class='product-card' data-product-card>
     {{#if hit}}
     <p class='product-card__label product-card__label--hit'>Хіт продажів</p>
     {{/if}}
-    {{#if new}}
+    {{!-- {{#if new}}
     <p class='product-card__label product-card__label--new'>Новинка</p>
-    {{/if}}
+    {{/if}} --}}
 
     <picture>
       <source
@@ -48,6 +48,6 @@
     </picture>
     <h3 class='product-card__title'>{{title}}</h3>
     <p class='product-card__price'>{{price}} ГРН</p>
-    <button class='button product-card__button' type='button'>Замовити</button>
+    <button class='button product-card__button' type='button' data-buy-button>Замовити</button>
   </li>
 {{/each}}

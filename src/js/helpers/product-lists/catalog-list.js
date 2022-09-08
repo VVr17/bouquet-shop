@@ -8,7 +8,7 @@ if (window.location.pathname === '/catalog.html') {
     loadMoreBtn: '.js-load-more-button',
   });
 
-  catalogCards.renderProductCards();
-  catalogCards.addLoadMoreBtnHandler();
-  catalogCards.addSpecificClass('catalog__item');
+  console.log('inside catalog')
+  catalogCards.renderProductCards('','catalog__item');
+  catalogCards.addLoadMoreBtnHandler('','catalog__item');
 }

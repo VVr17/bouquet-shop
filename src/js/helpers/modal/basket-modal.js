@@ -9,3 +9,5 @@ const basketModal = new Modal ({
 });
 
 basketModal.addHandler();
+
+export { basketModal }

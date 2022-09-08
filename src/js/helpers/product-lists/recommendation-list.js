@@ -7,6 +7,5 @@ if (window.location.pathname === '/index.html') {
     productList: '#recommendation-list',
   });
 
-  recommendationCards.renderProductCards('recommendation');
-  recommendationCards.addSpecificClass('recommendation__item');
+  recommendationCards.renderProductCards('recommendation','recommendation__item');
 }

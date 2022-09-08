@@ -7,6 +7,5 @@ if (window.location.pathname === '/index.html') {
     productList: '#special-offer-list',
   });
 
-  specialOfferCards.renderProductCards('specialOffer');
-  specialOfferCards.addSpecificClass('special-offer__item');
+  specialOfferCards.renderProductCards('specialOffer','special-offer__item');
 }
