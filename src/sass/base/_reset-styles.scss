@@ -9,6 +9,21 @@ p {
   padding: 0;
 }
 
+// reset input number arrows
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+
 .list {
   padding: 0;
   margin: 0;

@@ -7,6 +7,9 @@
 @import './utils/visually-hiddem';
 @import './utils/mixin';
 
+@import './components/modal/modal';
+@import './components/modal/backdrop';
+@import './components/modal/btn-close';
 @import './components/button';
 @import './components/logo';
 @import './components/socials';
@@ -21,9 +24,6 @@
 @import './components/catalog-sidebar';
 @import './components/product-card-label';
 @import './components/form-checkbox';
-@import './components/modal/modal';
-@import './components/modal/backdrop';
-@import './components/modal/btn-close';
 @import './components/modal/question-form-modal';
 @import './components/ancor-link';
 @import './components/counter';

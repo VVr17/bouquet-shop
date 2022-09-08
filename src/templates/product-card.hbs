@@ -1,6 +1,13 @@
-{{#each this}}
+{{!-- {{#each this}} --}}
+{{#each card}}
   <li class='product-card'>
-    <p class='product-card__label'></p>
+    {{#if hit}}
+    <p class='product-card__label product-card__label--hit'>Хіт продажів</p>
+    {{/if}}
+    {{#if new}}
+    <p class='product-card__label product-card__label--new'>Новинка</p>
+    {{/if}}
+
     <picture>
       <source
         media='(min-width:1440px)'

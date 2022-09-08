@@ -1,6 +1,10 @@
+import './js/helpers/validate-input-number';
+import './js/helpers/basket-cards-counter';
+import './js/basket-modal';
+import './js/catalog-list';
+import './js/gallery-slider';
 import './js/header-show';
 import './js/mobile-menu';
-import './js/gallery-slider';
-import './js/basket-modal';
 import './js/question-form';
-import './js/catalog-list';
+import './js/recommendation-list';
+import './js/special-offer-list';

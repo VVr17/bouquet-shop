@@ -1,4 +1,4 @@
-import ProductCards from './product-list';
+import ProductCards from './helpers/product-list';
 
 if (window.location.pathname === '/index.html') {
   // in index.html

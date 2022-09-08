@@ -1,21 +1,9 @@
 import ProductsData from './get-data';
-import productCardTemplate from '../templates/product-card.hbs';
+import productCardTemplate from '../../templates/product-card.hbs';
 
 const productsData = new ProductsData();
 
 export default class ProductCards {
-  //! static property - label
-  static Label = {
-    HIT: {
-      class: 'product-card__label--hit',
-      text: 'Хіт продажів',
-    },
-    NEW: {
-      class: 'product-card__label--new',
-      text: 'Новинка',
-    },
-  };
-
   constructor(selectors) {
     this.refs = this.getRefs(selectors);
   }
@@ -73,8 +61,6 @@ export default class ProductCards {
         'beforeend',
         productCardTemplate(itemsToRender)
       );
-      this.addLabel(itemsToRender); //?
-
     } catch (error) {
       console.error(error);
     }
@@ -84,39 +70,7 @@ export default class ProductCards {
     const galleryItems = Array.from(this.refs.productList.children);
     galleryItems.forEach(child => child.classList.add(listClass));
   }
-
-  /**
-   *
-   * @param {array} cardsList
-   */
-  // addLabelClass(cardsList) {
-  //   // <p class='product-card__label product-card__label--hit'>Хіт продажів</p>
-  //   // <p class="product-card__label product-card__label--new">Новинка</p>
-
-  //   cardsList.map(card => {
-  //     if(card.hit) {
-        
-  //       this.Label.labelToAdd.class
-  //     }
-
-  //     if(card.new) {
-  //       this.createLabel(NEW)
-  //     }
-  //   })
-  // }
 }
-
-/* 
- createLabel(labelToAdd) {
-  // <p class='product-card__label product-card__label--hit'>Хіт продажів</p>
-  // <p class="product-card__label product-card__label--new">Новинка</p>
-
-  const label = `
-  <p class='product-card__label ${this.Label.labelToAdd.class}'>
-  ${this.Label.labelToAdd.text}</p>
-  `;
-}*/
-
 
 
 /* 

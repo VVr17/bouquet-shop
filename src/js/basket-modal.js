@@ -1,4 +1,4 @@
-import Modal from './modal';
+import Modal from './helpers/modal';
 
 const basketModal = new Modal ({
   openModalBtn: '[data-basket-modal-open]',
