@@ -11,6 +11,7 @@
 
 .btn-close--basket-card {
   @include circle (18px);  
+  font-size: 10px;
 }
 
 .basket-card__picture-wrapper {

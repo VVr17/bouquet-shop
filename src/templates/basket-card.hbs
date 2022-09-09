@@ -1,9 +1,7 @@
-<li class="basket__item basket-card js-basket-card">
-  {{!-- <button class="btn-close btn-close--basket-card">
-    <svg class="btn-close__icon" width="10px" height="10px">
-      <use href="./images/sprite.svg#icon-close"></use>
-    </svg>
-  </button> --}}
+<li class="basket__item basket-card js-basket-card" data-id-{{id}}>
+  <button class="btn-close btn-close--basket-card">
+    &#x2716
+  </button>
 
   <div class="basket-card__title-wrapper">
     <div class="basket-card__picture-wrapper">
@@ -22,12 +20,12 @@
   </div>
   <div class="basket-card__counter-wrapper">
     <div class="counter">
-      <button class="counter__button" type="button" data-increment> &#8211 </button>
+      <button class="counter__button" type="button" data-decrement> &#8211 </button>
         <label class="counter__label">
           <input type="number" class="counter__input" step="1" min="1" max="20" maxlength="2" id="num_count"
             name="quantity" value="1" data-counter></input>
         </label>
-      <button class="counter__button" type="button" data-decrement> &#43 </button>
+      <button class="counter__button" type="button" data-increment> &#43 </button>
     </div>
     <p class="basket-card__price">{{price}} грн</p>
   </div>

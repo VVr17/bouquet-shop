@@ -1,3 +1,6 @@
+import {Basket} from "../classes/basket";
+const basket = new Basket('#basket');
+
 export default class Modal {
   constructor(selectors) {
     this.refs = this.getRefs(selectors);
@@ -50,12 +53,20 @@ export default class Modal {
       'keydown',
       this.onEscKeyDown(this.closeModal.bind(this))
     );
+
+    if(this.refs.modal.querySelector('#basket')){
+      basket.addBasketHandler();
+    }
   }
 
   closeModal() {
     this.refs.modal.classList.add('is-hidden');
     document.body.classList.remove('modal-open');
     document.removeEventListener('keydown', this.onEscKeyDown);
+
+    if(this.refs.modal.querySelector('#basket')){
+      basket.removeBasketHandler();
+    }
   }
 
   onBackdropClick(event) {
