@@ -1,0 +1,13 @@
+.load-more-button {
+  display: block;
+  margin: 0 auto;
+
+  &.is-hidden {
+    display: none;
+  }
+
+  &:disabled {
+    border-color: dimgrey;
+    color:dimgrey;
+  }
+}

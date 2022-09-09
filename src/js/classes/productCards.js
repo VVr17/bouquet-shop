@@ -1,3 +1,5 @@
+// import { Notify } from 'notiflix/build/notiflix-notify-aio';
+import LoadMoreBtn from '../classes/loadMoreBtn';
 import ProductsData from './productsData';
 import productCardTemplate from '../../templates/product-card.hbs';
 
@@ -5,21 +7,10 @@ const productsData = new ProductsData();
 
 export default class ProductCards {
   constructor(selectors) {
-    this.refs = this.getRefs(selectors);
-  }
+    const { listSelector, loadMoreBtnSelector } = selectors;
 
-  getRefs(selectors = {}) {
-    const { productList, loadMoreBtn } = selectors;
-    const refs = {};
-    refs.productList = document.querySelector(productList);
-    if (loadMoreBtn) refs.loadMoreBtn = document.querySelector(loadMoreBtn);
-    return refs;
-  }
-
-  addLoadMoreBtnHandler(property = '', listClass = '') {
-    this.refs.loadMoreBtn.addEventListener('click', () =>
-      this.renderProductCards(property, listClass)
-    );
+    this.ref = document.querySelector(listSelector);
+    this.loadMoreBtn = new LoadMoreBtn(loadMoreBtnSelector);
   }
 
   /**
@@ -27,37 +18,49 @@ export default class ProductCards {
    * @param {string} property recommendation, specialOffer
    */
   async renderProductCards(property = '', listClass = '') {
+    this.loadMoreBtn.show();
+    this.loadMoreBtn.disable();
+
     try {
-      let items = [];
+      let itemsToRender = [];
 
       if (!property) {
         // if there is no special list property
-        items = await productsData.fetchProductsData();
+        itemsToRender = await productsData.fetchProductsData();
       } else {
         // if there is list type property
-        const itemsToFilter = await productsData.fetchProductsData();
-        items = itemsToFilter.filter(item => `item.${property}`);
+        itemsToRender = await productsData.fetchProductsDataByProperty(
+          property
+        );
       }
 
-      const itemsToRender = items.filter(
-        (item, index) =>
-          index >= productsData.showedItems && index < productsData.itemsToShow
-      );
-      productsData.incrementShowedItemsAndItemToShow();
+      if (productsData.totalItems > productsData.offset) {
+        this.loadMoreBtn.addLoadMoreBtnHandler(() =>
+          this.renderProductCards(property, listClass)
+        );
+      }
 
-      // console.log(items[0].hit)
-      this.refs.productList.insertAdjacentHTML(
+      this.ref.insertAdjacentHTML(
         'beforeend',
         productCardTemplate(itemsToRender)
       );
       this.addSpecificClass(listClass);
+      productsData.incrementOffset();
+
+      if (productsData.totalItems <= productsData.offset) {
+        this.loadMoreBtn.hide();
+        return;
+      }
+
+      this.loadMoreBtn.enable();
     } catch (error) {
-      console.error(error);
+      this.loadMoreBtn.hide();
+      console.warn(error);
     }
   }
 
   addSpecificClass(listClass = '') {
-    const galleryItems = Array.from(this.refs.productList.children);
+    const galleryItems = Array.from(this.ref.children);
     galleryItems.forEach(child => {
       if (!child.classList.contains('listClass')) {
         child.classList.add(listClass);
