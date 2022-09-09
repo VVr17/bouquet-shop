@@ -1,5 +1,3 @@
-import initiateBasketCounters from "../helpers/basket-counter";
-
 export default class Modal {
   constructor(selectors) {
     this.refs = this.getRefs(selectors);
@@ -52,9 +50,6 @@ export default class Modal {
       'keydown',
       this.onEscKeyDown(this.closeModal.bind(this))
     );
-
-    //! проверить как работает корзина по открытию модалки
-    initiateBasketCounters(); 
   }
 
   closeModal() {

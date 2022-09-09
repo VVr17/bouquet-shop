@@ -68,3 +68,5 @@ export default class ProductCards {
     });
   }
 }
+
+export { productsData }

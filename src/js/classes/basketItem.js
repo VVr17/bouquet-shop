@@ -1,38 +1,31 @@
-import ProductsData from './productsData';
+import { productsData } from './productCards';
+import initiateBasketCounters from "../helpers/basket-counter";
+import BasketCounter from '../classes/basketCounter';
+
+
 import basketCardTemplate from '../../templates/basket-card.hbs';
 
-const productsData = new ProductsData();
-
 export default class BasketItem {
-  // constructor(selectors) {
-  //   this.refs = this.getRefs(selectors);
-  // }
-
-  // getRefs(selectors = {}) {
-  //   const { productList, loadMoreBtn } = selectors;
-  //   const refs = {};
-  //   refs.productList = document.querySelector(productList);
-  //   if (loadMoreBtn) refs.loadMoreBtn = document.querySelector(loadMoreBtn);
-  //   return refs;
-  // }
-
-  // проверить на какую кнопку нажали - по ней определить ID товара
-  // запросить fetch и сделать render
-  addItemToBasket() {
-
+  constructor(basketItemId) {
+    this.basket = document.querySelector('#basket')
+    this.basketItemId = basketItemId;
   }
 
-  async renderBasketItems() {
+  async addItemToBasket() {
     try {
-      const items = await productsData.fetchProductsData();
-      const itemToRender = items.find(()=>{ });
-
-      this.refs.productList.insertAdjacentHTML(
+      const itemToRender = await productsData.fetchProductDataById(this.basketItemId);
+      this.basket.insertAdjacentHTML(
         'beforeend',
-        basketCardTemplate(itemToRender)
+        basketCardTemplate(...itemToRender)
       );
+
+      // переделать initiateBasketCounters - у каждого айтема будет свой счетчик
+      const basketCounter = new BasketCounter();
+      // инициировать счетчик
+      // initiateBasketCounters();
+
     } catch (error) {
-      console.error(error);
+      console.warn(error);
     }
   }
 }

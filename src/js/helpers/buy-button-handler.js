@@ -12,8 +12,12 @@ catalogList?.addEventListener('click', onBuyBtnClick)
 function onBuyBtnClick(event) {
 
   if(event.target.nodeName === 'BUTTON' && event.target.hasAttribute('data-buy-button')) {
+    
+    const itemToFindId = event.target.closest('.product-card').id;
+    const basketItem = new BasketItem(itemToFindId);
+    basketItem.addItemToBasket();
+
     basketModal.openModal();
-    //! проверить, на экземпляре BasketItem.addItemToBasket()  
   }
   
 }
