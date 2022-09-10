@@ -1,4 +1,5 @@
 import { Counters } from '../classes/basketCounter';
+import { basketModal } from "../helpers/modal/basket-modal";
 let basketCounters = new Counters();
 
 class Basket {
@@ -8,10 +9,12 @@ class Basket {
 
   addBasketHandler() {
     this.ref.addEventListener('click', this.onCounterBtnClick);
+    this.ref.addEventListener('click', this.onDeleteBtnClick);
   }
 
   removeBasketHandler() {
     this.ref.removeEventListener('click', this.onCounterBtnClick);
+    this.ref.removeEventListener('click', this.onDeleteBtnClick);
   }
 
   onCounterBtnClick(event) {
@@ -29,6 +32,16 @@ class Basket {
         basketCounter => basketCounter.refs.incrementBtn === event.target
       );
       basketCounterClicked.incrementCounter();
+    }
+  }
+
+  // при закрытии модального окна проверить, какие элементы имеют display=none и сделать remove()
+  onDeleteBtnClick(event) {
+    if (!event.target.nodeName == 'BUTTON') return;
+
+    if (event.target.hasAttribute('data-btn-delete-item')) {
+      // event.target.closest('.js-basket-card').remove();
+      event.target.closest('.js-basket-card').style.display = 'none';
     }
   }
 }

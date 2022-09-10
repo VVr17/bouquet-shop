@@ -18,13 +18,17 @@ class BasketCounter {
   }
   
   incrementCounter() {
-    this.counter += 1;
-    this.refs.counterInput.value = this.counter;
+    if (this.counter < 20 ) {
+      this.counter += 1;
+      this.refs.counterInput.value = this.counter;
+    }
   }
 
   decrementCounter() {
-    this.counter -= 1;
-    this.refs.counterInput.value = this.counter;
+    if (this.counter > 1) {
+      this.counter -= 1;
+      this.refs.counterInput.value = this.counter;
+    }
   }
 }
 

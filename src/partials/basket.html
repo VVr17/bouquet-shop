@@ -7,14 +7,21 @@
       </svg>
     </button>
 
+    <!-- <div class="basket__empty-basket">
+      <p class="basket__empty-basket-text">В Вашій корзині поки що нічого немає</p>
+      <p class="basket__empty-basket-description">Перейдіть до каталогу, щоб знайти те, що Вам потірбно</p>
+    </div> -->
+
     <strong class="modal__title basket__title"> Кошик</strong>
     <ul class="list basket__list" id="basket">
     </ul>
+
     <div class="basket__underside-wrapper">
-      <p class="basket__total-price">До оплати:
-        <span class="basket__price-number">0 грн</span>
-      </p>
-      <button class="button basket__button" type="button">Оформити замовлення</button>
+      <label class="basket__total-price-label"> До оплати:
+        <input type="number" class="basket__total-price-input" value="0" readonly></input>
+        грн
+      </label>
+      <button class="button basket__button" type="submit">Оформити замовлення</button>
     </div>
     <button class="button button--transparent basket--back-button" type="button"
       data-basket-modal-close-button>Продовжити покупки</button>
