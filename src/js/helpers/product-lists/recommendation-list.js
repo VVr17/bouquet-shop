@@ -1,6 +1,6 @@
 import ProductCards from '../../classes/productCards';
 
-if (window.location.pathname === '/index.html') {
+if (window.location.pathname === './index.html') {
   // in index.html
 
   const recommendationCards = new ProductCards(
