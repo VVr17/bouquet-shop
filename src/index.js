@@ -5,6 +5,6 @@ import './js/helpers/gallery-slider';
 import './js/helpers/header-show';
 import './js/classes/mobileMenu';
 import './js/helpers/modal/question-form';
-// import './js/helpers/product-lists/recommendation-list';
-// import './js/helpers/product-lists/special-offer-list';
+import './js/helpers/product-lists/recommendation-list';
+import './js/helpers/product-lists/special-offer-list';
 import './js/helpers/buy-button-handler';
