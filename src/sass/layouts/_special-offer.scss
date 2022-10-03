@@ -1,10 +1,9 @@
 .special-offer {
   position: relative;
-  
-  @media screen and (min-width:768px) {
+
+  @media screen and (min-width: 768px) {
     padding-top: 0;
   }
-
 }
 
 .special-offer::before {
@@ -17,9 +16,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    pointer-events: none;
   }
 
-  @media screen and (min-width: 1170px) and (max-width:1439.98px) {
+  @media screen and (min-width: 1170px) and (max-width: 1439.98px) {
     top: -125px;
     right: 0;
     background-image: url(../images/bg-images/leaf-7-lg.png);
@@ -45,44 +45,42 @@
 }
 
 .special-offer__container {
-  @media screen and (min-width:1440px) {
-    position: relative; 
+  @media screen and (min-width: 1440px) {
+    position: relative;
   }
 }
 
 .special-offer__list {
   margin-bottom: 20px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     position: relative;
     z-index: 4;
-    
+
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
   }
-
 }
 
 .special-offer__item {
-  @media screen and (max-width:767.98px) {
-    
+  @media screen and (max-width: 767.98px) {
     &:not(:last-child) {
       margin-bottom: 20px;
     }
   }
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 20px) / 2);
   }
 
-  @media screen and (min-width:1440px) {
+  @media screen and (min-width: 1440px) {
     flex-basis: calc((100% - 80px) / 4);
   }
 }
 
 .accent-sign {
-  color:  var(--accent-red-color);
+  color: var(--accent-red-color);
 }
 
 .special-offer__title {
@@ -98,4 +96,3 @@
 .special-offer__to-catalog {
   top: 35px;
 }
-

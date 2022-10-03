@@ -25,6 +25,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    pointer-events: none;
   }
 }
 
@@ -49,17 +50,17 @@
 }
 
 .about__image-thumb {
-  max-width: 320px;
-
   @media screen and (max-width: 767.98px) {
     margin: 0 auto;
-  }
-  @media screen and (max-width: 767.98px) {
     margin-bottom: 30px;
   }
 
   @media screen and (min-width: 768px) {
     margin-right: 30px;
+  }
+
+  @media screen and (max-width: 1439.98px) {
+    max-width: 320px;
   }
 
   @media screen and (min-width: 1440px) {

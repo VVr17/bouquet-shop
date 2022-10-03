@@ -3,10 +3,9 @@
   z-index: 2;
 }
 
-
 .blog::before {
-  @media screen and (min-width: 1170px)  {
-  content: '';
+  @media screen and (min-width: 1170px) {
+    content: '';
     position: absolute;
     z-index: 1;
     bottom: 180px;
@@ -16,9 +15,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    pointer-events: none;
   }
 
-  @media screen and (min-width: 1170px) and (max-width:1439.98px) {
+  @media screen and (min-width: 1170px) and (max-width: 1439.98px) {
     background-image: url(../images/bg-images/leaf-8-lg.png);
 
     @media (min-device-pixel-ratio: 2),
@@ -51,9 +51,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    pointer-events: none;
   }
 
-  @media screen and (min-width: 1170px) and (max-width:1439.98px) {
+  @media screen and (min-width: 1170px) and (max-width: 1439.98px) {
     background-image: url(../images/bg-images/leaf-7-lg.png);
 
     @media (min-device-pixel-ratio: 2),
@@ -170,4 +171,5 @@
   background-position: left top;
   background-repeat: no-repeat;
   transform: translateY(-100%);
+  pointer-events: none;
 }

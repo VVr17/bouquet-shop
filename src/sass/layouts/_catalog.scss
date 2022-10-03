@@ -1,13 +1,15 @@
 .catalog {
   position: relative;
   z-index: 2;
+
+  &.is-hidden {
+    display: none;
+  }
 }
 
-
 .catalog::before {
-
-  @media screen and (min-width: 1170px)  {
-  content: '';
+  @media screen and (min-width: 1170px) {
+    content: '';
     position: absolute;
     z-index: 1;
     bottom: 180px;
@@ -17,9 +19,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    pointer-events: none;
   }
 
-  @media screen and (min-width: 1170px) and (max-width:1439.98px) {
+  @media screen and (min-width: 1170px) and (max-width: 1439.98px) {
     background-image: url(../images/bg-images/leaf-8-lg.png);
 
     @media (min-device-pixel-ratio: 2),
@@ -52,9 +55,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    pointer-events: none;
   }
 
-  @media screen and (min-width: 1170px) and (max-width:1439.98px) {
+  @media screen and (min-width: 1170px) and (max-width: 1439.98px) {
     background-image: url(../images/bg-images/leaf-7-lg.png);
 
     @media (min-device-pixel-ratio: 2),
@@ -75,7 +79,6 @@
   }
 }
 
-
 .catalog__content-container {
   display: flex;
   flex-direction: row-reverse;
@@ -90,7 +93,7 @@
   flex-grow: 1;
   margin-bottom: 30px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -100,24 +103,23 @@
 .catalog__filter-button {
   margin-bottom: 20px;
 
-  @media screen and (min-width:1440px) {
+  @media screen and (min-width: 1440px) {
     display: none;
   }
 }
 
 .catalog__item {
-  @media screen and (max-width:767.98px) {
+  @media screen and (max-width: 767.98px) {
     &:not(:last-child) {
       margin-bottom: 20px;
     }
   }
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 20px) / 2);
   }
 
-  @media screen and (min-width:1440px) {
+  @media screen and (min-width: 1440px) {
     flex-basis: calc((100% - 60px) / 3);
   }
 }
-

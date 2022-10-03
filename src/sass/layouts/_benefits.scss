@@ -30,6 +30,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  pointer-events: none;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -64,6 +65,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    pointer-events: none;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -102,25 +104,24 @@
 }
 
 .benefits__container::before {
-
   content: '';
-    position: absolute;
-    z-index: 6;
-    bottom: 0;
-    left: 0;
-    width: 78px;
-    height: 87px;
-    background-image: url(../images/bg-images/leaf-1-sm.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  position: absolute;
+  z-index: 6;
+  bottom: 0;
+  left: 0;
+  width: 78px;
+  height: 87px;
+  background-image: url(../images/bg-images/leaf-1-sm.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
 
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(../images/bg-images/leaf-1-sm@2x.png);
   }
-
 
   @media screen and (min-width: 1440px) {
     width: 190px;
@@ -173,6 +174,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  pointer-events: none;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),

@@ -27,6 +27,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  pointer-events: none;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -72,6 +73,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  pointer-events: none;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -127,6 +129,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    pointer-events: none;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),

@@ -37,12 +37,10 @@ export default class ProductsData {
 
   async fetchProductDataById(id) {
     try {
-      console.log('inside fetch')
       //link to Google
       const response = await axios.get(
         `https://sheet.best/api/sheets/c18f7bf8-af73-4384-ad69-39b8dfc13c08/id/${id}`
       );
-      console.log('response.data',response.data)
       return response.data;
     } catch (error) {
       console.warn('fetch-error', error);
