@@ -55,12 +55,21 @@ class BasketItemsList {
   }
 
   onBasketModalClose() {
-    if (this.removedItems.length > 0)
+    if (this.removedItems.length > 0) {
       this.removedItems.forEach(item => item.remove());
-    this.removedItems = [];
 
-    // через reduce собрать все id и проверить в массиве basketItems
-    this.basketItems.forEach(() => {});
+      const itemsToRemoveId = this.removedItems.reduce((allId, item) => {
+        const itemId = parseInt(Object.keys(item.dataset)[0].match(/\d+/));
+        allId.push(itemId);
+        return allId;
+      }, []);
+
+      this.basketItems = this.basketItems.filter(
+        item => !itemsToRemoveId.includes(+item.basketItemId)
+      );
+
+      this.removedItems = [];
+    }
   }
 }
 
