@@ -120,6 +120,8 @@
   }
 
   @media screen and (min-width: 1440px) {
-    flex-basis: calc((100% - 60px) / 3);
+    // change if there is filter
+    // flex-basis: calc((100% - 60px) / 3);
+    flex-basis: calc((100% - 80px) / 4);
   }
 }

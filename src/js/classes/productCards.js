@@ -1,4 +1,4 @@
-// import { Notify } from 'notiflix/build/notiflix-notify-aio';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import LoadMoreBtn from '../classes/loadMoreBtn';
 import ProductsData from './productsData';
 import productCardTemplate from '../../templates/product-card.hbs';
@@ -50,6 +50,10 @@ export default class ProductCards {
 
       if (this.productsData.totalItems <= this.productsData.offset) {
         this.loadMoreBtn.hide();
+
+        if (this.ref.id === 'catalog-list') {
+          Notify.info('Всі доступні букети були завантажені');
+        }
         return;
       }
 
