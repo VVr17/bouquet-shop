@@ -1,10 +1,13 @@
 import { Counters } from '../classes/basketCounter';
-import { basketModal } from "../helpers/modal/basket-modal";
-let basketCounters = new Counters();
+import { basketItemsList } from '../helpers/buy-button-handler';
+import { basketModal } from '../helpers/modal/basket-modal';
+import ProductsData from './productsData';
+const basketCounters = new Counters();
 
 class Basket {
   constructor(basketSelector) {
     this.ref = document.querySelector(basketSelector);
+    this.productsData = new ProductsData();
   }
 
   addBasketHandler() {
@@ -33,6 +36,8 @@ class Basket {
       );
       basketCounterClicked.incrementCounter();
     }
+
+    basketCounters.countTotalPrice();
   }
 
   // при закрытии модального окна проверить, какие элементы имеют display=none и сделать remove()
@@ -41,8 +46,11 @@ class Basket {
 
     if (event.target.hasAttribute('data-btn-delete-item')) {
       // event.target.closest('.js-basket-card').remove();
-      event.target.closest('.js-basket-card').style.display = 'none';
+      const itemToRemove = event.target.closest('.js-basket-card');
+      basketItemsList.removeBasketItem(itemToRemove);
+      basketCounters.removeCounter(itemToRemove);
     }
+    basketCounters.countTotalPrice();
   }
 }
 

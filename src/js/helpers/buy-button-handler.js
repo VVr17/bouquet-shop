@@ -1,5 +1,7 @@
 import { basketModal } from './modal/basket-modal';
-import BasketItem from '../classes/basketItem';
+import { BasketItemsList } from '../classes/basketItem';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
+const basketItemsList = new BasketItemsList();
 
 const recommendationList = document.querySelector('#recommendation-list');
 const specialOfferList = document.querySelector('#special-offer-list');
@@ -15,8 +17,22 @@ function onBuyBtnClick(event) {
     event.target.hasAttribute('data-buy-button')
   ) {
     const itemToFindId = event.target.closest('.product-card').id;
-    const basketItem = new BasketItem(itemToFindId);
-    basketItem.addItemToBasket();
+
+    const isInBasket = basketItemsList.basketItems.some(
+      item => +item.basketItemId === +itemToFindId
+    );
+
+    if (isInBasket) {
+      basketModal.openModal();
+      Notify.info(
+        `Обраний букет вже є у кошику. Можете змінити кількість за бажанням`
+      );
+      return;
+    }
+
+    basketItemsList.newBasketItem(itemToFindId);
     basketModal.openModal();
   }
 }
+
+export { basketItemsList };

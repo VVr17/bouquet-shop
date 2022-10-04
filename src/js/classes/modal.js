@@ -1,4 +1,5 @@
-import {Basket} from "../classes/basket";
+import { Basket } from '../classes/basket';
+import { basketItemsList } from '../helpers/buy-button-handler';
 const basket = new Basket('#basket');
 
 export default class Modal {
@@ -54,7 +55,7 @@ export default class Modal {
       this.onEscKeyDown(this.closeModal.bind(this))
     );
 
-    if(this.refs.modal.querySelector('#basket')){
+    if (this.refs.modal.querySelector('#basket')) {
       basket.addBasketHandler();
     }
   }
@@ -64,8 +65,9 @@ export default class Modal {
     document.body.classList.remove('modal-open');
     document.removeEventListener('keydown', this.onEscKeyDown);
 
-    if(this.refs.modal.querySelector('#basket')){
+    if (this.refs.modal.querySelector('#basket')) {
       basket.removeBasketHandler();
+      basketItemsList.onBasketModalClose();
     }
   }
 
@@ -83,3 +85,5 @@ export default class Modal {
     };
   }
 }
+
+export { basket };

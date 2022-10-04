@@ -7,7 +7,7 @@ export default class ProductsData {
     this.totalItems = 0;
   }
 
-  async fetchProductsData() {
+  fetchProductsData = async () => {
     try {
       //link to Google sheets
       const response = await axios.get(
@@ -19,9 +19,9 @@ export default class ProductsData {
     } catch (error) {
       console.warn('fetch-error', error);
     }
-  }
+  };
 
-  async fetchProductsDataByProperty(property) {
+  fetchProductsDataByProperty = async property => {
     try {
       //link to Google
       const response = await axios.get(
@@ -33,9 +33,9 @@ export default class ProductsData {
     } catch (error) {
       console.warn('fetch-error', error);
     }
-  }
+  };
 
-  async fetchProductDataById(id) {
+  fetchProductDataById = async id => {
     try {
       //link to Google
       const response = await axios.get(
@@ -45,7 +45,7 @@ export default class ProductsData {
     } catch (error) {
       console.warn('fetch-error', error);
     }
-  }
+  };
 
   incrementOffset() {
     this.offset += this.perPage;
