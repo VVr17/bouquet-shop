@@ -1,7 +1,7 @@
 import { Notify } from 'notiflix';
 import { Counters } from '../classes/basketCounter';
 import { basketItemsList } from '../helpers/buy-button-handler';
-import { basketModal } from '../helpers/modal/basket-modal';
+import { basketModal, orderCompleteModal } from '../helpers/modal/basket-modal';
 import ProductsData from './productsData';
 const basketCounters = new Counters();
 
@@ -82,9 +82,8 @@ class Basket {
 
     basketItemsList.onSubmitBtn();
     basketCounters.onSubmitBtn();
-    Notify.success(
-      `Дякуємо, ми отримали Ваше замовлення. Ми зв'яжемося з вами протягом дня для узгодження деталей`
-    );
+
+    orderCompleteModal.openModal();
     event.currentTarget.reset();
     basketModal.closeModal();
   }

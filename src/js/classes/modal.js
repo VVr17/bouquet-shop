@@ -2,7 +2,7 @@ import { Basket } from '../classes/basket';
 import { basketItemsList } from '../helpers/buy-button-handler';
 const basket = new Basket('#basket');
 
-export default class Modal {
+class Modal {
   constructor(selectors) {
     this.refs = this.getRefs(selectors);
   }
@@ -32,9 +32,9 @@ export default class Modal {
   }
 
   addHandler() {
-    this.refs.openModalBtn.addEventListener('click', () => this.openModal());
-    this.refs.closeModalBtn.addEventListener('click', () => this.closeModal());
-    this.refs.modal.addEventListener('click', event =>
+    this.refs.openModalBtn?.addEventListener('click', () => this.openModal());
+    this.refs.closeModalBtn?.addEventListener('click', () => this.closeModal());
+    this.refs.modal?.addEventListener('click', event =>
       this.onBackdropClick(event)
     );
     if (this.refs.openModalMobileBtn)
@@ -86,4 +86,4 @@ export default class Modal {
   }
 }
 
-export { basket };
+export { basket, Modal };

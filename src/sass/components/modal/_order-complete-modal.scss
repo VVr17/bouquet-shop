@@ -1,0 +1,25 @@
+.order-complete-modal {
+  padding: 50px;
+  line-height: 2;
+  text-align: center;
+
+  @media screen and (min-width: 480px) and (orientation: portrait) {
+    padding: 50px;
+  }
+
+  @media screen and (min-width: 480px) and (orientation: landscape) {
+    padding: 50px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 50px;
+  }
+
+  @media screen and (min-width: 768px) and (min-height: 655px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 528px;
+  }
+}

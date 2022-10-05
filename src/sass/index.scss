@@ -8,6 +8,7 @@
 @import './utils/mixin';
 
 @import './components/modal/modal';
+@import './components/modal/order-complete-modal';
 @import './components/modal/backdrop';
 @import './components/modal/btn-close';
 @import './components/button';
@@ -29,7 +30,6 @@
 @import './components/ancor-link';
 @import './components/counter';
 
-
 @import './layouts/mobile-menu';
 @import './layouts/section';
 @import './layouts/header';
@@ -48,5 +48,3 @@
 @import './layouts/catalog';
 @import './layouts/blog';
 @import './layouts/footer';
-
-

@@ -1,4 +1,4 @@
-import Modal from '../../classes/modal';
+import { Modal } from '../../classes/modal';
 
 const basketModal = new Modal({
   openModalBtn: '[data-basket-modal-open]',
@@ -8,6 +8,12 @@ const basketModal = new Modal({
   modal: '[data-basket-modal]',
 });
 
-basketModal.addHandler();
+const orderCompleteModal = new Modal({
+  modal: '[data-orderComplete]',
+  closeModalBtn: '[data-orderComplete-close]',
+});
 
-export { basketModal };
+basketModal.addHandler();
+orderCompleteModal.addHandler();
+
+export { basketModal, orderCompleteModal };
