@@ -1,3 +1,3 @@
-import 'lazysizes';
+// import 'lazysizes';
 // import a plugin
-import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+// import 'lazysizes/plugins/parent-fit/ls.parent-fit';

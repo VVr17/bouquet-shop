@@ -77,6 +77,11 @@ class Counters {
       counter => parseInt(counter.id.match(/\d+/)) !== itemId
     );
   }
+
+  onSubmitBtn() {
+    this.counters = [];
+    this.countTotalPrice();
+  }
 }
 
 export { BasketCounter, Counters };

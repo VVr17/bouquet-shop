@@ -1,3 +1,4 @@
+import { Notify } from 'notiflix';
 import { Counters } from '../classes/basketCounter';
 import { basketItemsList } from '../helpers/buy-button-handler';
 import { basketModal } from '../helpers/modal/basket-modal';
@@ -7,17 +8,21 @@ const basketCounters = new Counters();
 class Basket {
   constructor(basketSelector) {
     this.ref = document.querySelector(basketSelector);
+    this.formRef = document.querySelector('#basket-form');
+    this.submitBtnRef = document.querySelector('button[data-basket-submit]');
     this.productsData = new ProductsData();
   }
 
   addBasketHandler() {
     this.ref.addEventListener('click', this.onCounterBtnClick);
     this.ref.addEventListener('click', this.onDeleteBtnClick);
+    this.formRef.addEventListener('submit', this.onFormSubmit);
   }
 
   removeBasketHandler() {
     this.ref.removeEventListener('click', this.onCounterBtnClick);
     this.ref.removeEventListener('click', this.onDeleteBtnClick);
+    this.formRef.removeEventListener('submit', this.onFormSubmit);
   }
 
   onCounterBtnClick(event) {
@@ -40,7 +45,6 @@ class Basket {
     basketCounters.countTotalPrice();
   }
 
-  // при закрытии модального окна проверить, какие элементы имеют display=none и сделать remove()
   onDeleteBtnClick(event) {
     if (!event.target.nodeName == 'BUTTON') return;
 
@@ -51,6 +55,38 @@ class Basket {
       basketCounters.removeCounter(itemToRemove);
     }
     basketCounters.countTotalPrice();
+  }
+
+  onFormSubmit(event) {
+    event.preventDefault();
+    const { name, phone, email, totalPrice } = event.currentTarget.elements;
+    const order = {
+      name: name.value,
+      phone: phone.value,
+      email: email.value,
+      items: [],
+      totalPrice: totalPrice.value,
+    };
+
+    basketItemsList.basketItems.forEach(item => {
+      const counter = basketCounters.allCounters.find(
+        counter => counter.id === `counter-${item.id}`
+      );
+
+      item = { ...item };
+      item.quantity = counter.counter;
+      item.totalPricePerItem = item.quantity * item.price;
+
+      order.items.push(item);
+    });
+
+    basketItemsList.onSubmitBtn();
+    basketCounters.onSubmitBtn();
+    Notify.success(
+      `Дякуємо, ми отримали Ваше замовлення. Ми зв'яжемося з вами протягом дня для узгодження деталей`
+    );
+    event.currentTarget.reset();
+    basketModal.closeModal();
   }
 }
 

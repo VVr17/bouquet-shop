@@ -7,24 +7,64 @@
       </svg>
     </button>
 
-    <!-- <div class="basket__empty-basket">
-      <p class="basket__empty-basket-text">В Вашій корзині поки що нічого немає</p>
-      <p class="basket__empty-basket-description">Перейдіть до каталогу, щоб знайти те, що Вам потірбно</p>
-    </div> -->
-
     <strong class="modal__title basket__title"> Кошик</strong>
     <ul class="list basket__list" id="basket">
+      <li class="basket__empty-basket" id="empty-text">
+        <p class="basket__empty-basket-text">В Вашій корзині поки що нічого немає</p>
+        <p class="basket__empty-basket-description">Перейдіть до каталогу, щоб знайти те, що Вам потірбно</p>
+
+      </li>
     </ul>
 
-    <div class="basket__underside-wrapper">
-      <label class="basket__total-price-label"> До оплати:
-        <input type="number" class="basket__total-price-input" readonly data-total-price></input>
-        грн
+    <form class="question-form" name="order_form" id="basket-form">
+      <strong class="modal__title basket__title basket__title-form"> Будь-ласка, введіть Ваші дані</strong>
+      <label class="question-form__label basket__label">
+        <span class="question-form__text">Ім'я</span>
+        <span class="question-form__wrapper">
+          <input class="question-form__input basket__input" type="text" name="name" minlength="3" required>
+          <svg class="question-form__icon" width="18px" height="18px">
+            <use href="./images/sprite.svg#icon-modal-person">
+            </use>
+          </svg>
+        </span>
+        <span class="question-form__assistance-message">
+          Ім'я повинно складатися мінімум з 3х символів
+        </span>
       </label>
-      <button class="button basket__button" type="submit">Оформити замовлення</button>
-    </div>
+      <label class="question-form__label basket__label">
+        <span class="question-form__text">Телефон</span>
+        <span class="question-form__wrapper">
+          <input class="question-form__input basket__input" type="tel" name="phone" required>
+          <svg class="question-form__icon" width="18px" height="18px">
+            <use href="./images/sprite.svg#icon-modal-phone">
+            </use>
+          </svg>
+        </span>
+        <span class="question-form__assistance-message">+38 (999) 111-11-11</span>
+      </label>
+      <label class="question-form__label basket__label">
+        <span class="question-form__text">Пошта</span>
+        <span class="question-form__wrapper">
+          <input class="question-form__input basket__input" type="email" name="email" required>
+          <svg class="question-form__icon" width="18px" height="18px">
+            <use href="./images/sprite.svg#icon-modal-email">
+            </use>
+          </svg>
+        </span>
+        <span class="question-form__assistance-message">mail@mail.com</span>
+      </label>
+      <div class="basket__underside-wrapper">
+        <label class="basket__total-price-label"> До оплати:
+          <input type="number" class="basket__total-price-input" readonly name="totalPrice" data-total-price></input>
+          грн
+        </label>
+        <button class="button basket__button" type="submit" data-basket-submit disabled>Оформити замовлення</button>
+      </div>
+    </form>
     <button class="button button--transparent basket--back-button" type="button"
-      data-basket-modal-close-button>Продовжити покупки</button>
+      data-basket-modal-close-button>Продовжити
+      покупки</button>
+
   </div>
 </div>
 

@@ -17,22 +17,24 @@ export default class ProductCards {
    * @param {string} property recommendation, specialOffer
    */
   async renderProductCards(property = '', listClass = '') {
+    this.loadMoreBtn.disable();
     try {
       let itemsToRender = [];
 
       if (!property) {
         // if there is no special list property
         itemsToRender = await this.productsData.fetchProductsData();
+        this.loadMoreBtn.enable();
       } else {
         // if there is list type property
         itemsToRender = await this.productsData.fetchProductsDataByProperty(
           property
         );
+        this.loadMoreBtn.enable();
       }
 
       if (this.productsData.totalItems > this.productsData.perPage) {
         this.loadMoreBtn.show();
-        this.loadMoreBtn.disable();
       }
 
       if (this.productsData.totalItems > this.productsData.offset) {
@@ -56,8 +58,6 @@ export default class ProductCards {
         }
         return;
       }
-
-      this.loadMoreBtn.enable();
     } catch (error) {
       this.loadMoreBtn.hide();
       console.warn(error);

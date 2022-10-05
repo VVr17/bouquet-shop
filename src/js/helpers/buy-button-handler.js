@@ -18,7 +18,7 @@ function onBuyBtnClick(event) {
   ) {
     const itemToFindId = event.target.closest('.product-card').id;
 
-    const isInBasket = basketItemsList.basketItems.some(
+    const isInBasket = basketItemsList.removedItemsId.some(
       item => +item.basketItemId === +itemToFindId
     );
 
