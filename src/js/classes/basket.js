@@ -1,4 +1,3 @@
-import { Notify } from 'notiflix';
 import { Counters } from '../classes/basketCounter';
 import { basketItemsList } from '../helpers/buy-button-handler';
 import { basketModal, orderCompleteModal } from '../helpers/modal/basket-modal';

@@ -8,15 +8,15 @@
     </button>
 
     <strong class="modal__title basket__title"> Кошик</strong>
-    <ul class="list basket__list" id="basket">
-      <li class="basket__empty-basket" id="empty-text">
-        <p class="basket__empty-basket-text">В Вашій корзині поки що нічого немає</p>
-        <p class="basket__empty-basket-description">Перейдіть до каталогу, щоб знайти те, що Вам потірбно</p>
+    <div class="basket__empty-basket" id="empty-text">
+      <p class="basket__empty-basket-text">В Вашій корзині поки що нічого немає</p>
+      <p class="basket__empty-basket-description">Перейдіть до каталогу, щоб знайти те, що Вам потірбно</p>
+    </div>
 
-      </li>
+    <ul class="list basket__list is-hidden" id="basket">
     </ul>
 
-    <form class="question-form" name="order_form" id="basket-form">
+    <form class="question-form basket-form__is-hidden" name="order_form" id="basket-form">
       <strong class="modal__title basket__title basket__title-form"> Будь-ласка, введіть Ваші дані</strong>
       <label class="question-form__label basket__label">
         <span class="question-form__text">Ім'я</span>

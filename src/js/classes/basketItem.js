@@ -34,6 +34,8 @@ class BasketItem {
 
 // Class that holds a collection of counters and properties and functions for the group
 class BasketItemsList {
+  emptyBasketRef = document.querySelector('#empty-text');
+
   constructor() {
     this.removedItemsId = [];
     this.removedItemsRef = [];
@@ -41,8 +43,11 @@ class BasketItemsList {
   }
   // create a new item and save it in the collection
   async newBasketItem(basketItemId) {
-    if (this.removedItemsId.length === 0)
-      basketRef.children[0].classList.add('is-hidden');
+    if (this.removedItemsId.length === 0) {
+      basketRef.classList.remove('is-hidden');
+      basket.formRef.classList.remove('basket-form__is-hidden');
+      this.emptyBasketRef.classList.add('is-hidden');
+    }
 
     let basketItem = new BasketItem(basketItemId);
     const item = await basketItem.addItemToBasket();
@@ -56,22 +61,26 @@ class BasketItemsList {
     return this.removedItemsId;
   }
 
-  removeBasketItem(itemToRemove) {
-    itemToRemove.style.display = 'none';
-    const itemId = parseInt(Object.keys(itemToRemove.dataset)[0].match(/\d+/));
+  removeBasketItem(itemToRemoveRef) {
+    itemToRemoveRef.classList.add('is-hidden');
+    const itemId = parseInt(
+      Object.keys(itemToRemoveRef.dataset)[0].match(/\d+/)
+    );
     this.basketItems = this.basketItems.filter(item => +item.id !== itemId);
-    this.removedItemsRef.push(itemToRemove);
+    this.removedItemsRef.push(itemToRemoveRef);
 
     this.onAllItemsRemoved();
   }
 
   onAllItemsRemoved() {
-    const isAllItemsRemoved = Array.from(basketRef.children)
-      .filter(child => child.classList.contains('js-basket-card'))
-      .every(li => li.style[0] === 'display');
+    const isAllItemsRemoved = Array.from(basketRef.children).every(li =>
+      li.classList.contains('is-hidden')
+    );
 
     if (isAllItemsRemoved) {
-      basketRef.children[0].classList.remove('is-hidden');
+      this.emptyBasketRef.classList.remove('is-hidden');
+      basketRef.classList.add('is-hidden');
+      basket.formRef.classList.add('basket-form__is-hidden');
       basket.submitBtnRef.setAttribute('disabled', true);
     }
   }
@@ -95,14 +104,14 @@ class BasketItemsList {
   }
 
   onSubmitBtn() {
-    Array.from(basketRef.children)
-      .filter(child => child.classList.contains('js-basket-card'))
-      .forEach(item => this.removeBasketItem(item));
+    Array.from(basketRef.children).forEach(item => this.removeBasketItem(item));
     this.onBasketModalClose();
     this.removedItemsId = [];
     this.removedItemsRef = [];
     this.basketItems = [];
-    basketRef.children[0].classList.remove('is-hidden');
+    this.emptyBasketRef.classList.remove('is-hidden');
+    basketRef.classList.add('is-hidden');
+    basket.formRef.classList.add('basket-form__is-hidden');
   }
 }
 
