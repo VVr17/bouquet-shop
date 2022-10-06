@@ -3,80 +3,76 @@
   z-index: 2;
 }
 
-.blog::before {
-  @media screen and (min-width: 1170px) {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    bottom: 180px;
-    left: 0;
-    width: 202px;
-    height: 831px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    pointer-events: none;
-  }
+// .blog::before {
+//   @media screen and (min-width: 1170px) {
+//     content: '';
+//     position: absolute;
+//     z-index: 1;
+//     bottom: 180px;
+//     left: 0;
+//     width: 202px;
+//     height: 831px;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     pointer-events: none;
+//   }
 
-  @media screen and (min-width: 1170px) and (max-width: 1439.98px) {
-    background-image: url(../images/bg-images/leaf-8-lg.png);
+//   @media screen and (min-width: 1170px) and (max-width: 1439.98px) {
+//     background-image: url(../images/bg-images/leaf-8-lg.png);
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/bg-images/leaf-8-lg@2x.png);
-    }
-  }
+//     @media (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url(../images/bg-images/leaf-8-lg@2x.png);
+//     }
+//   }
 
-  @media screen and (min-width: 1720px) {
-    background-image: url(../images/bg-images/leaf-8-lg.png);
+//   @media screen and (min-width: 1720px) {
+//     background-image: url(../images/bg-images/leaf-8-lg.png);
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/bg-images/leaf-8-lg@2x.png);
-    }
-  }
-}
+//     @media (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url(../images/bg-images/leaf-8-lg@2x.png);
+//     }
+//   }
+// }
 
-.blog::after {
-  @media screen and (min-width: 1170px) {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: 200px;
-    right: 0;
-    width: 238px;
-    height: 831px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    pointer-events: none;
-  }
+// .blog::after {
+//   @media screen and (min-width: 1170px) {
+//     content: '';
+//     position: absolute;
+//     z-index: 1;
+//     top: 200px;
+//     right: 0;
+//     width: 238px;
+//     height: 831px;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     pointer-events: none;
+//   }
 
-  @media screen and (min-width: 1170px) and (max-width: 1439.98px) {
-    background-image: url(../images/bg-images/leaf-7-lg.png);
+//   @media screen and (min-width: 1170px) and (max-width: 1439.98px) {
+//     background-image: url(../images/bg-images/leaf-7-lg.png);
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/bg-images/leaf-7-lg@2x.png);
-    }
-  }
+//     @media (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url(../images/bg-images/leaf-7-lg@2x.png);
+//     }
+//   }
 
-  @media screen and (min-width: 1720px) {
-    background-image: url(../images/bg-images/leaf-7-lg.png);
+//   @media screen and (min-width: 1720px) {
+//     background-image: url(../images/bg-images/leaf-7-lg.png);
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/bg-images/leaf-7-lg@2x.png);
-    }
-  }
-}
-
-// .blog__item:not(:last-child) {
-//   margin-bottom: 30px;
+//     @media (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url(../images/bg-images/leaf-7-lg@2x.png);
+//     }
+//   }
 // }
 
 .blog__article {
