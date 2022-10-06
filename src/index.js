@@ -10,4 +10,6 @@ import './js/helpers/product-lists/recommendation-list';
 import './js/helpers/product-lists/special-offer-list';
 import './js/helpers/buy-button-handler';
 
-import './js/helpers/view-more-btn';
+import './js/helpers/customer-review-read-more';
+
+import './js/helpers/blog-accordion';

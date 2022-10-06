@@ -37,22 +37,33 @@
     }
   }
 }
+.customer-review__button.content-is-hidden {
+  margin-bottom: 0;
+}
 
 .customer-review__list {
   opacity: 1;
   visibility: visible;
   display: block;
   margin-bottom: 30px;
+  max-height: 100%;
 
   transform: translateY(0);
-  transition: transform 250ms ease-in;
+  transition: transform 250ms var(--transition-timing),
+    opacity 250ms var(--transition-timing),
+    visibility 250ms var(--transition-timing),
+    max-height 250ms var(--transition-timing);
 
   &.is-hidden {
     opacity: 0;
     visibility: hidden;
     max-height: 0;
     overflow: hidden;
-    transform: translateY(-101%);
+    transform: translateY(-50%);
+    transition: transform 250ms var(--transition-timing),
+      opacity 250ms var(--transition-timing),
+      visibility 250ms var(--transition-timing),
+      max-height 250ms var(--transition-timing);
     margin-bottom: 0;
   }
 }
@@ -174,8 +185,6 @@
   }
 }
 
-//! маржин только когда появляется ul
-//! с ul убрать маржин нижний
 .customer-review__button {
   margin-bottom: 20px;
 }

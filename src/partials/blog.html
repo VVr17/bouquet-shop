@@ -2,10 +2,15 @@
   <div class="container">
     <a class="ancor-link" name="blog"></a>
     <h2 class="section__title">Наш блог</h2>
-    <ul class="list customer-review__list">
-      <li class="blog__item">
+    <ul class="list customer-review__list accordion" id="js-accordion">
+      <li class="blog__item accordion-item" accordion-item>
         <h3 class="visually-hidden">Заголовок посту</h3>
-        <article class="blog__article">
+        <button class="accordion-button" aria-expanded="false" data-accordion-btn>
+          <span class="accordion-title">Ми даємо можливість нашим
+            клієнтам особисто взяти участь у створенні подарунка для обдаровуваного</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <article class="blog__article accordion-content">
           <img class="blog__picture image" src="./images/blog/da-buket.png" alt="user photo Emily" width="85"
             height="85">
           <div class="blog__wrapper">
@@ -20,12 +25,18 @@
               </p>
             </div>
           </div>
-          <button class="button" type="button">Розгорнути</button>
+          <!-- <button class="button button--transparent" type="button" data-accordion-btn>Згорнути</button> -->
         </article>
       </li>
-      <li class="blog__item">
+      <li class="blog__item accordion-item" accordion-item>
         <h3 class="visually-hidden">Заголовок посту</h3>
-        <article class="blog__article">
+        <button class="accordion-button" aria-expanded="false" data-accordion-btn>
+          <span class="accordion-title">У нашій майстерні є правило: ви завжди отримуєте фотобукет перед його
+            відправкою.
+          </span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <article class="blog__article accordion-content">
           <img class="blog__picture image" src="./images/blog/buket.png" alt="user photo Emily" width="85" height="85">
           <div class="blog__wrapper">
             <div class="blog__gradient-wrapper">
@@ -36,16 +47,19 @@
                 вас.
                 ✓ На цьому етапі можете внести коригування в упаковку, колір стрічки, додати листівку та ін.
                 ✓ За потреби можемо і відео готового букета зняти з усіх боків.
-
               </p>
             </div>
           </div>
-          <button class="button" type="button">Розгорнути</button>
+          <!-- <button class="button button--transparent" type="button" data-accordion-btn>Згорнути</button> -->
         </article>
       </li>
-      <li class="blog__item">
+      <li class="blog__item accordion-item" accordion-item>
         <h3 class="visually-hidden">Заголовок посту</h3>
-        <article class="blog__article">
+        <button class="accordion-button" aria-expanded="false" data-accordion-btn>
+          <span class="accordion-title">Сьогодні Корисний понеділок</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <article class="blog__article accordion-content">
           <img class="blog__picture image" src="./images/blog/da-buket.png" alt="user photo Emily" width="85"
             height="85">
           <div class="blog__wrapper">
@@ -69,12 +83,16 @@
               </p>
             </div>
           </div>
-          <button class="button" type="button">Розгорнути</button>
+          <!-- <button class="button button--transparent" type="button" data-accordion-btn>Згорнути</button> -->
         </article>
       </li>
-      <li class="blog__item">
+      <li class="blog__item accordion-item" accordion-item>
         <h3 class="visually-hidden">Заголовок посту</h3>
-        <article class="blog__article">
+        <button class="accordion-button" aria-expanded="false" data-accordion-btn>
+          <span class="accordion-title">М'ясний конверт. Без зайвих слів. Лише факти.</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <article class="blog__article accordion-content">
           <img class="blog__picture image" src="./images/blog/buket.png" alt="user photo Emily" width="85" height="85">
           <div class="blog__wrapper">
             <div class="blog__gradient-wrapper">
@@ -101,12 +119,16 @@
               </p>
             </div>
           </div>
-          <button class="button" type="button">Розгорнути</button>
+          <!-- <button class="button button--transparent" type="button" data-accordion-btn>Згорнути</button> -->
         </article>
       </li>
-      <li class="blog__item">
+      <li class="blog__item accordion-item" accordion-item>
         <h3 class="visually-hidden">Заголовок посту</h3>
-        <article class="blog__article">
+        <button class="accordion-button" aria-expanded="false" data-accordion-btn>
+          <span class="accordion-title">Як дарувати букети</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <article class="blog__article accordion-content">
           <img class="blog__picture image" src="./images/blog/da-buket.png" alt="user photo Emily" width="85"
             height="85">
           <div class="blog__wrapper">
@@ -136,12 +158,16 @@
               </p>
             </div>
           </div>
-          <button class="button" type="button">Розгорнути</button>
+          <!-- <button class="button button--transparent" type="button" data-accordion-btn>Згорнути</button> -->
         </article>
       </li>
-      <li class="blog__item">
+      <li class="blog__item accordion-item" accordion-item>
         <h3 class="visually-hidden">Заголовок посту</h3>
-        <article class="blog__article">
+        <button class="accordion-button" aria-expanded="false" data-accordion-btn>
+          <span class="accordion-title">Чи робимо ми знижки?</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <article class="blog__article accordion-content">
           <img class="blog__picture image" src="./images/blog/buket.png" alt="user photo Emily" width="85" height="85">
           <div class="blog__wrapper">
             <div class="blog__gradient-wrapper">
@@ -173,12 +199,16 @@
               </p>
             </div>
           </div>
-          <button class="button" type="button">Розгорнути</button>
+          <!-- <button class="button button--transparent" type="button" data-accordion-btn>Згорнути</button> -->
         </article>
       </li>
-      <li class="blog__item">
+      <li class="blog__item accordion-item" accordion-item>
         <h3 class="visually-hidden">Заголовок посту</h3>
-        <article class="blog__article">
+        <button class="accordion-button" aria-expanded="false" data-accordion-btn>
+          <span class="accordion-title">Відповідаю на часті запитання.</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <article class="blog__article accordion-content">
           <img class="blog__picture image" src="./images/blog/da-buket.png" alt="user photo Emily" width="85"
             height="85">
           <div class="blog__wrapper">
@@ -202,12 +232,17 @@
               </p>
             </div>
           </div>
-          <button class="button" type="button">Розгорнути</button>
+          <!-- <button class="button button--transparent" type="button" data-accordion-btn>Згорнути</button> -->
         </article>
       </li>
-      <li class="blog__item">
+      <li class="blog__item accordion-item" accordion-item>
         <h3 class="visually-hidden">Заголовок посту</h3>
-        <article class="blog__article">
+        <button class="accordion-button" aria-expanded="false" data-accordion-btn>
+          <span class="accordion-title">Все більшу і більшу популярність набирають фудкомпозиції в боксах, коробочках
+            або скриньках.</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <article class="blog__article accordion-content">
           <img class="blog__picture image" src="./images/blog/da-buket.png" alt="user photo Emily" width="85"
             height="85">
           <div class="blog__wrapper">
@@ -253,7 +288,7 @@
               </p>
             </div>
           </div>
-          <button class="button" type="button">Розгорнути</button>
+          <!-- <button class="button button--transparent" type="button" data-accordion-btn>Згорнути</button> -->
         </article>
       </li>
     </ul>
