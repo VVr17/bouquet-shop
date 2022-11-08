@@ -2,41 +2,41 @@
   position: relative;
 }
 
-.customer-review::before {
-  @media screen and (min-width: 1170px) {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: 150px;
-    right: 0;
-    width: 238px;
-    height: 831px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    pointer-events: none;
-  }
+// .customer-review::before {
+//   @media screen and (min-width: 1170px) {
+//     content: '';
+//     position: absolute;
+//     z-index: 1;
+//     top: 150px;
+//     right: 0;
+//     width: 238px;
+//     height: 831px;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     pointer-events: none;
+//   }
 
-  @media screen and (min-width: 1170px) and (max-width: 1439.98px) {
-    background-image: url(../images/bg-images/leaf-7-lg.png);
+//   @media screen and (min-width: 1170px) and (max-width: 1439.98px) {
+//     background-image: url(../images/bg-images/leaf-7-lg.png);
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/bg-images/leaf-7-lg@2x.png);
-    }
-  }
+//     @media (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url(../images/bg-images/leaf-7-lg@2x.png);
+//     }
+//   }
 
-  @media screen and (min-width: 1720px) {
-    background-image: url(../images/bg-images/leaf-7-lg.png);
+//   @media screen and (min-width: 1720px) {
+//     background-image: url(../images/bg-images/leaf-7-lg.png);
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/bg-images/leaf-7-lg@2x.png);
-    }
-  }
-}
+//     @media (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url(../images/bg-images/leaf-7-lg@2x.png);
+//     }
+//   }
+// }
 .customer-review__button.content-is-hidden {
   margin-bottom: 0;
 }
